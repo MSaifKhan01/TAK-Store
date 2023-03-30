@@ -91,6 +91,93 @@
             cursor: pointer;
         }
 
+        .main>ul>li>a {
+    color: #140d29;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 14px;
+
+}
+
+.megamenu {
+    background-color: white;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* transition: 1.5s; */
+}
+
+/* .main>ul>li:hover{
+    text-shadow: #795548;
+} */
+
+/* .main>ul>li:hover .megamenu {
+    opacity: 1;
+    visibility: visible;
+    top: 130%;
+}
+
+.megamenuitems ul li {
+    cursor: pointer;
+    color: #212121;
+    font-size: 14px;
+    list-style: none;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+
+.megamenuitems {
+    flex-basis: 30%;
+    margin: 1%;
+} */
+
+.dropbtn {
+  background-color: whitesmoke;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {
+    display: block;
+}
         header .login {
             height: 100%;
             display: flex;
@@ -429,7 +516,18 @@ footer{
                 </div>
             </div>
             <div class="login">
-                <button><a style="text-decoration: none;" href="login.html">Login</a></button>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Login</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="login.html">Login</a>
+                      <a href="signup.html">Register</a>
+                      <a href="#Admin.html">Admin</a>
+                    </div>
+                  </div>
+                <!-- <button>
+                    <a style="text-decoration: none;" href="login.html">Login</a>
+                
+                </button> -->
             </div>
             <div class="become-seller">
                 Become a Seller
@@ -960,4 +1058,23 @@ footer{
         setInterval(slideshowFun, 2000, slideImages);
     });
 
+
+
+    function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 </script>

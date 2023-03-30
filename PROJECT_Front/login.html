@@ -175,18 +175,18 @@ margin-bottom: 20px;
           </div>
           <div class="col-sm-6 col-xs-1 box2">
             <div class="user-id user-data">
-              <input type="email " name="" id="" required=""/>
+              <input type="email " name="" id="email" required=""/>
               <label>Enter Email/Mobile Number</label>
             </div>
             <div class="user-id user-data">
-              <input type="password" name="" id="" required=""/>
+              <input type="password" name="" id="pass" required=""/>
               <label>Enter Password</label>
               
             </div>
             
                 <span><a href="#">Forgot?</span></a>
             <div class="user-id button">
-              <input type="submit" name="" id="" value="Login" />
+              <input type="submit" name="" id="submit" value="Login" />
             </div>
             <div class="user-id">
             <p>OR</p>
@@ -202,4 +202,33 @@ margin-bottom: 20px;
       </div>
     </div>
   </body>
+
+  <script>
+       document.getElementById("submit").addEventListener("click", () => {
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("pass").value;
+  
+        let res = fetch("http://localhost:8000/user/login", {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify({ email, password }),
+        })
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => {
+            // console.log(data);
+            sessionStorage.setItem("token", data.token);
+            alert("login sucessfull!");
+            window.location.href = "./index.html";
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+  
+     
+      });
+  </script>
 </html>

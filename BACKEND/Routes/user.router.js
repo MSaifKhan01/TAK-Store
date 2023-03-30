@@ -11,10 +11,10 @@ userRouter.get("/homepage", async (req, res) => {
 })
 
 userRouter.post("/register", async (req, res) => {
-    const { name, email, password, location, age } = req.body
+    const { name, email,mobile_No, password,  age } = req.body
     try {
         bcrypt.hash(password, 5, async (err, hash) => {
-            const user = new userModel({ name, email, password: hash, location, age })
+            const user = new userModel({ name, email,mobile_No, password: hash,  age })
             await user.save()
             res.status(200).send({ "msg": "registration done succesfully" })
         })
