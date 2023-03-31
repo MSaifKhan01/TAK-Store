@@ -3,7 +3,8 @@ const express = require('express')
 require("dotenv").config()
 const { connecting } = require('./Config/db')
 const { userRouter } = require('./Routes/user.router')
-const {adminRouter}=require("./Routes/note.routes")
+// const {adminRouter}=require("./Routes/note.routes")
+const {adminRouter}=require("./Routes/appliances.routes")
 
 
 
@@ -24,7 +25,8 @@ app.use("/user",userRouter)
 
 
 
-app.use("/product",auth,adminRouter)
+app.use("/product",adminRouter)
+// app.use("/product",auth,adminRouter)
 
 app.listen(process.env.PORT, async () => {
     try {
