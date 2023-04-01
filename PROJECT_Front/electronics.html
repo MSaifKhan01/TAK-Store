@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-      * {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -27,7 +27,7 @@
             padding: 0 8px;
         }
 
-        /* <---navbar1 ---> start*/  
+        /* <---navbar1 ---> start*/
 
         header {
             background-color: var(--primary-color);
@@ -62,6 +62,42 @@
             margin-left: 12px;
         }
 
+        @media only screen and (max-width: 700px) {
+            header .search {
+                display: none;
+            }
+
+            header {
+                background-color: var(--primary-color);
+                height: 56px;
+                width: 100%;
+                position: sticky;
+                margin-top: 0px;
+            }
+
+            .bestofElctronic_product_item {
+
+                display: grid;
+                width: 80%;
+                gap: 15px;
+                grid-template-columns: repeat(2, 1fr);
+                overflow: hidden;
+            }
+
+            .leftdiv {
+                /* width: 20%; */
+                display: none;
+            }
+            footer {
+            background-color: #172337;
+            height: 332;
+            width: 100%;
+        }
+        .footer-row2-col img{
+            display: none;
+        }
+        }
+
         header .search .search-container {
             width: 540px;
             height: 36px;
@@ -92,68 +128,72 @@
         }
 
         .main>ul>li>a {
-    color: #140d29;
-    font-weight: 800;
-    text-decoration: none;
-    font-size: 14px;
+            color: #140d29;
+            font-weight: 800;
+            text-decoration: none;
+            font-size: 14px;
 
-}
+        }
 
-.megamenu {
-    background-color: white;
-   
-    position: absolute;
-    top: 100%;
-    left: 0px;
-    width: 100%;
-    display: flex;
-    opacity: 0;
-    visibility: hidden;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        .megamenu {
+            background-color: white;
 
-}
+            position: absolute;
+            top: 100%;
+            left: 0px;
+            width: 100%;
+            display: flex;
+            opacity: 0;
+            visibility: hidden;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        }
 
 
-.dropbtn {
-  background-color: whitesmoke;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
+        .dropbtn {
+            background-color: whitesmoke;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
 
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
-}
+        .dropbtn:hover,
+        .dropbtn:focus {
+            background-color: #2980B9;
+        }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
 
-.dropdown a:hover {background-color: #ddd;}
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
 
-.show {
-    display: block;
-}
+        .show {
+            display: block;
+        }
+
         header .login {
             height: 100%;
             display: flex;
@@ -197,6 +237,7 @@
         header .cart {
             height: 100%;
             display: flex;
+            /* position: relative; */
             align-items: center;
             margin: 0 20px;
             color: white;
@@ -205,7 +246,8 @@
         header .cart svg {
             margin-right: 8px;
         }
-         /* <---navbar1 ---> end*/  
+
+        /* <---navbar1 ---> end*/
 
         .BestofElectronic_item {
             background-color: white;
@@ -214,12 +256,12 @@
             height: 310px;
             position: relative;
             display: flex;
-          
+
             align-items: center;
             flex-direction: column;
         }
 
-  
+
 
         .bestOfElectornic_image_Product img {
             width: 90%;
@@ -255,7 +297,7 @@
         }
 
         .bestofElctronic_product_item {
-          
+
             display: grid;
             width: 80%;
             gap: 15px;
@@ -276,117 +318,146 @@
             /* box-sizing: border-box; */
             margin-top: 50px;
             height: 55vh;
-               box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
-        div > button{
+
+        div>button {
             background-color: aqua;
             margin-left: 15px;
             border-radius: 4px;
             height: 4vh;
-         
-        
+
+
         }
-        div >p{
+
+        div>p {
             margin-left: 15px;
         }
 
+        .sort {
+            display: flex;
+            margin: 40px 0px 0px 400px;
 
+        }
 
+        .sort h2 {
+            margin-top: 5px;
+            color: #000;
+        }
 
+        /* .sort button{
+        
+            
+        } */
 
         /* <!-- footer --> */
-footer{
-    background-color: #172337;
-    height: 332;
-}
-.footer-row{
-    width: 100%;
-    height: 270px;
-    display: flex;
-    padding: 30px 60px;
-}
-.footer-row2{
-    display: flex;
-    border-top: 1px solid #454d5e;
-    justify-content: space-evenly;
-}
-.footer-col-1{
-    width: 15%;
-}
-.footer-col-2{
-    width: 15%;
-}
-.footer-col-3{
-    width: 15%;
-}
-.footer-col-4{
-    width: 10%;
-}
-.footer-col-5{
-    width: 20%;
-    border-left:1px solid #454d5e ;
-    height: 120px;
-    padding-left: 25px;
-}
-.footer-col-6{
-    width: 20%;
-    padding-left: 50px;
-}
-.footer-heading p{
- color: #878787;
- font-size: 12px;
- font-weight: 400;
- text-align: left;
- padding: 10px 0px;
- cursor: pointer;
- text-transform: uppercase;
-}
-.footer-list a{
-    text-align: left;
-    display: block;
-    text-decoration: none;
-   text-transform: capitalize;
-    color: white;
-    font-size: 12px;
-    font-weight: 400;
-    padding: 5px 0px;
-}
-.footer-list a:hover{
-    text-decoration: underline;
-}
-.footer-list  p{
-    text-align: left;
-    display: block;
-    color: white;
-    font-size: 12px;
-    font-weight: 100px;
-    padding:5px 0px;
-    line-height: 20px;
-    cursor: pointer;
-}
-.footer-list-address p{
-    text-align: left;
-    display: block;
-    color: white;
-    font-size: 12px;
-    font-weight: 100px;
-    line-height: 20px;
-     cursor: pointer;
-}
-.footer-list-address span{
-    color: rgb(60,109,245);
-    cursor: pointer;
-}
-.footer-row2-col p{
-  color: white;
-    font-size: 15px;
-    font-weight: 100px;
-    line-height: 20px;
-     cursor: pointer;
-      text-align: center;
-      line-height: 50px;
-      letter-spacing: .7px;
-}
+        footer {
+            background-color: #172337;
+            height: 332;
+        }
+
+        .footer-row {
+            width: 100%;
+            height: 270px;
+            display: flex;
+            padding: 30px 60px;
+        }
+
+        .footer-row2 {
+            display: flex;
+            border-top: 1px solid #454d5e;
+            justify-content: space-evenly;
+        }
+
+        .footer-col-1 {
+            width: 15%;
+        }
+
+        .footer-col-2 {
+            width: 15%;
+        }
+
+        .footer-col-3 {
+            width: 15%;
+        }
+
+        .footer-col-4 {
+            width: 10%;
+        }
+
+        .footer-col-5 {
+            width: 20%;
+            border-left: 1px solid #454d5e;
+            height: 120px;
+            padding-left: 25px;
+        }
+
+        .footer-col-6 {
+            width: 20%;
+            padding-left: 50px;
+        }
+
+        .footer-heading p {
+            color: #878787;
+            font-size: 12px;
+            font-weight: 400;
+            text-align: left;
+            padding: 10px 0px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .footer-list a {
+            text-align: left;
+            display: block;
+            text-decoration: none;
+            text-transform: capitalize;
+            color: white;
+            font-size: 12px;
+            font-weight: 400;
+            padding: 5px 0px;
+        }
+
+        .footer-list a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-list p {
+            text-align: left;
+            display: block;
+            color: white;
+            font-size: 12px;
+            font-weight: 100px;
+            padding: 5px 0px;
+            line-height: 20px;
+            cursor: pointer;
+        }
+
+        .footer-list-address p {
+            text-align: left;
+            display: block;
+            color: white;
+            font-size: 12px;
+            font-weight: 100px;
+            line-height: 20px;
+            cursor: pointer;
+        }
+
+        .footer-list-address span {
+            color: rgb(60, 109, 245);
+            cursor: pointer;
+        }
+
+        .footer-row2-col p {
+            color: white;
+            font-size: 15px;
+            font-weight: 100px;
+            line-height: 20px;
+            cursor: pointer;
+            text-align: center;
+            line-height: 50px;
+            letter-spacing: .7px;
+        }
     </style>
 </head>
 
@@ -418,11 +489,11 @@ footer{
                 <div class="dropdown">
                     <button onclick="myFunction()" class="dropbtn">Login</button>
                     <div id="myDropdown" class="dropdown-content">
-                      <a href="login.html">Login</a>
-                      <a href="signup.html">Register</a>
-                      <a href="product.html">Admin</a>
+                        <a href="login.html">Login</a>
+                        <a href="signup.html">Register</a>
+                        <a href="product.html">Admin</a>
                     </div>
-                  </div>
+                </div>
                 <!-- <button>
                     <a style="text-decoration: none;" href="login.html">Login</a>
                 
@@ -448,28 +519,31 @@ footer{
             </div>
         </div>
     </header>
-
+    <div class="sort">
+        <h2>SortBy</h2>
+        <button id="sort1">Price -- Low to High</button>
+        <button id="sort2">Price -- High to Low</button>
+    </div>
     <div class="main">
         <div class="leftdiv">
-<!-- filter part -->
-<div style="display: flex; margin-left: 30px; gap: 20px;">
-   
+            <!-- filter part -->
+            <div style="display: flex; margin-left: 30px; gap: 20px;">
 
-    <div>
-        <select name="filter" id="filter">
-            <option value="filter">Filter</option>
-        </select>
-    </div>
-    <div>
-        <select name="featured" id="featured" data-bs-toggle="tooltip" data-bs-title="Another tooltip">
-            <option value="">Featured</option>
-            <option value="atoz">A To Z</option>
-            <option value="ztoa">Z To A</option>
-            <option value="lowtohigh">Low To High</option>
-            <option value="hightolow">High To Low</option>
-        </select>
-    </div>
-</div>
+
+                <div>
+                    <select name="filter" id="filter">
+                        <option value="filter">Filter</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="featured" id="featured" data-bs-toggle="tooltip" data-bs-title="Another tooltip">
+                        <option value="">SortBy Desc</option>
+                        <option value="atoz">A To Z</option>
+                        <option value="ztoa">Z To A</option>
+                       
+                    </select>
+                </div>
+            </div>
         </div>
         <div class="bestofElctronic_product_item">
 
@@ -482,118 +556,118 @@ footer{
     </div>
     <!-- footer -->
 
-<footer>
+    <footer>
 
-    <div class="footer-row">
-        <div class="footer-col-1">
-            <div class="footer-heading">
-                 <p>ABOUT</p>
+        <div class="footer-row">
+            <div class="footer-col-1">
+                <div class="footer-heading">
+                    <p>ABOUT</p>
+                </div>
+                <div class="footer-list">
+                    <a href="#">Contact Us</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Flipkart Stories</a>
+                    <a href="#">Press</a>
+                    <a href="#">Flipkart Wholesale</a>
+                </div>
             </div>
-            <div class="footer-list">
-                <a href="#">Contact Us</a>
-                <a href="#">About Us</a>
-                <a href="#">Careers</a>
-                <a href="#">Flipkart Stories</a>
-                <a href="#">Press</a>
-                <a href="#">Flipkart Wholesale</a>
-            </div>
-        </div>
-        <div class="footer-col-2">
-            <div class="footer-heading">
-                 <p>HELP</p>
-            </div>
-            <div class="footer-list">
-                <a href="#">Payments</a>
-                <a href="#">Shipping</a>
-                <a href="#">Cancellation & Returns</a>
-                <a href="#">FAQ</a>
-                <a href="#">Report Infringement</a>
-                
-            </div>
-        </div>
-        <div class="footer-col-3">
-            <div class="footer-heading">
-                 <p>POLICY</p>
-            </div>
-            <div class="footer-list">
-                <a href="#">Return Policy</a>
-                <a href="#">Terms Of Use</a>
-                <a href="#">Security</a>
-                <a href="#">Privacy</a>
-                <a href="#">Sitemap</a>
-                <a href="#">EPR Compliance</a>
-            </div>
-        </div>
-        <div class="footer-col-4">
-            <div class="footer-heading">
-                 <p>SOCIAL</p>
-            </div>
-            <div class="footer-list">
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">YouTube</a>
-               
-            </div>
-        </div>
+            <div class="footer-col-2">
+                <div class="footer-heading">
+                    <p>HELP</p>
+                </div>
+                <div class="footer-list">
+                    <a href="#">Payments</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Cancellation & Returns</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Report Infringement</a>
 
-        <div class="footer-col-5">
-            <div class="footer-heading">
-                 <p>Mail Us</p>
+                </div>
             </div>
-            <div class="footer-list">
-                 <p>Flipkart Internet Private Limited,
-                    Buildings Alyssa, Begonia &
-                    Clove Embassy Tech Village,
-                    Outer Ring Road, Devarabeesanahalli Village,
-                    Bengaluru, 560103,
-                    Karnataka, India</p>
-               
+            <div class="footer-col-3">
+                <div class="footer-heading">
+                    <p>POLICY</p>
+                </div>
+                <div class="footer-list">
+                    <a href="#">Return Policy</a>
+                    <a href="#">Terms Of Use</a>
+                    <a href="#">Security</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">EPR Compliance</a>
+                </div>
             </div>
-        </div>
+            <div class="footer-col-4">
+                <div class="footer-heading">
+                    <p>SOCIAL</p>
+                </div>
+                <div class="footer-list">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">YouTube</a>
 
-        <div class="footer-col-6">
-            <div class="footer-heading">
-                 <p>Registered Office Address</p>
+                </div>
             </div>
-            <div class="footer-list-address">
-             <p>Flipkart Internet Private Limited,</p>
-             <p>Buildings Alyssa, Begonia &</p>
-             <p>Clove Embassy Tech Village,</p>
-             <p>Outer Ring Road, Devarabeesanahalli Village,</p>
-             <p>Bengaluru, 560103,</p>
-             <p>Karnataka, India</p>
-             <p>CIN : U51109KA2012PTC066107</p>
-             <p> Telephone:<span> 1800 202 9898</span></p>
-               
+
+            <div class="footer-col-5">
+                <div class="footer-heading">
+                    <p>Mail Us</p>
+                </div>
+                <div class="footer-list">
+                    <p>Flipkart Internet Private Limited,
+                        Buildings Alyssa, Begonia &
+                        Clove Embassy Tech Village,
+                        Outer Ring Road, Devarabeesanahalli Village,
+                        Bengaluru, 560103,
+                        Karnataka, India</p>
+
+                </div>
+            </div>
+
+            <div class="footer-col-6">
+                <div class="footer-heading">
+                    <p>Registered Office Address</p>
+                </div>
+                <div class="footer-list-address">
+                    <p>Flipkart Internet Private Limited,</p>
+                    <p>Buildings Alyssa, Begonia &</p>
+                    <p>Clove Embassy Tech Village,</p>
+                    <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+                    <p>Bengaluru, 560103,</p>
+                    <p>Karnataka, India</p>
+                    <p>CIN : U51109KA2012PTC066107</p>
+                    <p> Telephone:<span> 1800 202 9898</span></p>
+
+                </div>
             </div>
         </div>
-    </div>
-    <div class="footer-row2">
-        <div class="footer-row2-col">
-            <p> <i class="fas fa-shopping-bag"></i>Sell On Flipkart</p>
+        <div class="footer-row2">
+            <div class="footer-row2-col">
+                <p> <i class="fas fa-shopping-bag"></i>Sell On Flipkart</p>
+            </div>
+            <div class="footer-row2-col">
+                <p><i class="fas fa-star"></i>Advertise</p>
+            </div>
+            <div class="footer-row2-col">
+                <p><i class="fas fa-gift"></i>Gift Cards</p>
+            </div>
+            <div class="footer-row2-col">
+                <p><i class="fas fa-question-circle"></i>Help Center</p>
+            </div>
+            <div class="footer-row2-col">
+                <p>© 2007-2021 Flipkart.com</p>
+            </div>
+            <div class="footer-row2-col">
+                <img src="./flipkart images/payment.png" alt="payments">
+            </div>
         </div>
-        <div class="footer-row2-col">
-            <p><i class="fas fa-star"></i>Advertise</p>
-        </div>
-        <div class="footer-row2-col">
-            <p><i class="fas fa-gift"></i>Gift Cards</p>
-        </div>
-        <div class="footer-row2-col">
-            <p><i class="fas fa-question-circle"></i>Help Center</p>
-        </div>
-        <div class="footer-row2-col">
-            <p>© 2007-2021 Flipkart.com</p>
-        </div>
-        <div class="footer-row2-col">
-            <img src="./flipkart images/payment.png" alt="payments">
-        </div>
-    </div>
-</footer>
+    </footer>
 </body>
 
 <script>
     let bestofElctronic_product_itemEl = document.querySelector(".bestofElctronic_product_item")
-
+    let CartArr = JSON.parse(localStorage.getItem("cart")) || [];
 
     fetch("http://localhost:8000/product", {
         method: "GET",
@@ -608,8 +682,104 @@ footer{
         .then((data) => {
             console.log(data);
             display(data);
+            // display(sorted1)
         });
+      
+       
+        let sort1=document.getElementById("sort1")
+        sort1.addEventListener("click",()=>{
+            sorting1()
+        })
+        function sorting1(){
+           
+            fetch("http://localhost:8000/product/sort1", {
+        method: "GET",
+        headers: {
+            //   authorization: `${sessionStorage.getItem("token")}`,
+            "content-type": "application/json",
+        },
+    })
+        .then((res) => {
+            return res.json();
+        })
+        .then((data) => {
+            console.log(data);
+            display(data);
+            // display(sorted1)
+        });
+        }
+         
+        let sort2=document.getElementById("sort2")
+        sort2.addEventListener("click",()=>{
+            sorting2()
+        })
+        function sorting2(){
+           
+            fetch("http://localhost:8000/product/sort2", {
+        method: "GET",
+        headers: {
+            //   authorization: `${sessionStorage.getItem("token")}`,
+            "content-type": "application/json",
+        },
+    })
+        .then((res) => {
+            return res.json();
+        })
+        .then((data) => {
+            console.log(data);
+            display(data);
+            // display(sorted1)
+        });
+        }
 
+        let featured=document.getElementById("featured")
+        function sorting3(){
+           
+           fetch("http://localhost:8000/product/sort3", {
+       method: "GET",
+       headers: {
+           //   authorization: `${sessionStorage.getItem("token")}`,
+           "content-type": "application/json",
+       },
+   })
+       .then((res) => {
+           return res.json();
+       })
+       .then((data) => {
+           console.log(data);
+           display(data);
+         
+       });
+       }
+        function sorting4(){
+           
+           fetch("http://localhost:8000/product/sort4", {
+       method: "GET",
+       headers: {
+           //   authorization: `${sessionStorage.getItem("token")}`,
+           "content-type": "application/json",
+       },
+   })
+       .then((res) => {
+           return res.json();
+       })
+       .then((data) => {
+           console.log(data);
+           display(data);
+         
+       });
+       }
+  featured.addEventListener("change",()=>{
+  
+    if(featured.value=="atoz"){
+        sorting3()
+   
+    }else if(featured.value=="ztoa"){
+        sorting4()
+   
+    }
+
+  })
 
     function display(data) {
 
@@ -626,35 +796,91 @@ footer{
             img.src = el.image
             let div2 = document.createElement("div")
             div2.classList.add("bestofElectronicmoreOption")
-           
+
             let p = document.createElement("p")
             p.classList.add("bestofElectornicProduct_name")
             p.innerText = el.description
             let p2 = document.createElement("p")
             p2.classList.add("bestofElecronic_discount")
-            p2.innerText = `Rs ${el.new_price}`
+            p2.innerText = `₹${el.new_price}`
             let p3 = document.createElement("p")
             p3.classList.add("bestofElectronic_brand")
             p3.innerText = el.stars
+            
             p3.style.color = 'red'
+            // let p4 = document.createElement("p")
+            // p4.innerText=el.qty
             let div3 = document.createElement("div")
             div3.classList.add("btndiv")
-            let btn1=document.createElement("button")
-            btn1.innerText="Show Details"
-            let btn2=document.createElement("button")
-            btn2.innerText="Add to Cart"
+            let btn1 = document.createElement("button")
+            btn1.innerText = "Show Details"
+            let btn2 = document.createElement("button")
+            btn2.innerText = "Add to Cart"
+          
             div1.append(img)
-            div3.append(btn1,btn2)
-            div2.append(p, p2, p3,div3)
+            div3.append(btn1, btn2)
+            div2.append(p, p2, p3, div3)
             link1.append(div1, div2)
             card.append(link1)
 
             bestofElctronic_product_itemEl.append(card)
 
 
+            btn2.addEventListener("click", () => {
+        // if (checkDuplicate(data)) {
+        //   alert("Product Already in Cart")
+        // } else {
+        //   CartArr.push(el);
+        //   localStorage.setItem("cart", JSON.stringify(CartArr));
+        //   alert("Product Added To Cart")
+        //   window.location.href = "./addTocart.html"
+        // }
+
+
+        fetch("http://localhost:8000/cart/add",{
+                method:"POST",
+                headers:{
+                    "Content-Type":"application/json",
+                    "Authorization":`${sessionStorage.getItem("token")}`
+                },
+                body:JSON.stringify(el)
+            })
+            .then((res)=>{
+                return res.json()
+            })
+            .then((data)=>{
+                console.log(data)
+                alert("Product added to cart") 
+            })
+            .catch((err)=>{
+                console.log(err)
+            })
+
+      })
+
+
+
+
         })
+        
 
     }
+
+
+
+
+
+//     function checkDuplicate(data) {
+//     for (let i = 0; i < CartArr.length; i++) {
+
+//       if (CartArr[i]._id === data._id) {
+//         return true;
+
+//       }
+//     }
+//     return false;
+//   }
+
 
 </script>
 

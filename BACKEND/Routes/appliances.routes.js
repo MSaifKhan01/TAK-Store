@@ -5,8 +5,7 @@ const jwt=require("jsonwebtoken")
 const { applianceModel }=require("../Models/appliances.model")
 
 adminRouter.get("/",async(req,res)=>{
-    // const token=req.header.authorization
-    // const decoded=jwt.verify(token,process.env.secrete_key)
+   
 
     try {
         let data=await applianceModel.find()
@@ -15,58 +14,48 @@ adminRouter.get("/",async(req,res)=>{
         console.log(error)
     }
 })
-
-// adminRouter.get('/',async (req,res)=>{
-//     // const token=req.headers.authorization
-//     // const decoded=jwt.verify(token,"jammi")
-//     try{
-//         if(decoded){
-//             const appliances=await applianceModel.find()
-//             // const appliances=await applianceModel.find({"userID":decoded.userID})
-//             res.status(200).send(appliances)
-//         }
-//     }catch(err){
-//         res.status(400).send({"msz":err.message})
-//     }
-// })
-
-adminRouter.post("/add", async(req,res)=>{
-    try{
-    const note=new applianceModel(req.body)
-    await note.save()
-    res.status(200).send({"Msz":"A New Note has been added"})
-    }catch(err){
-        res.status(400).send({"msz":err.message})
-    }
-})
-
-adminRouter.put("/update/:Id", async (req, res) => {
-    let { Id } = req.params
-
-    let newbody = req.body
+adminRouter.get("/sort1",async(req,res)=>{
+   
 
     try {
-        await applianceModel.findByIdAndUpdate({ _id: Id }, newbody)
-        res.send({ "msg": " Movie dataupdated succesfully" })
+        let data=await applianceModel.find().sort({new_price:1})
+        res.status(200).send(data)
     } catch (error) {
-        res.send({ "error": "some error occured while updating" })
+        console.log(error)
+    }
+})
+adminRouter.get("/sort2",async(req,res)=>{
+    
+
+    try {
+        let data=await applianceModel.find().sort({new_price:-1})
+        res.status(200).send(data)
+    } catch (error) {
+        console.log(error)
+    }
+})
+adminRouter.get("/sort3",async(req,res)=>{
+   
+
+    try {
+        let data=await applianceModel.find().sort({description:1})
+        res.status(200).send(data)
+    } catch (error) {
         console.log(error)
     }
 })
 
-adminRouter.delete("/delete/:Id", async (req, res) => {
-    let  {Id } = req.params
+adminRouter.get("/sort4",async(req,res)=>{
+   
+
     try {
-        await applianceModel.findByIdAndDelete({ _id: Id })
-        res.send({ "message": "Deleted succesfully" })
+        let data=await applianceModel.find().sort({description:-1})
+        res.status(200).send(data)
     } catch (error) {
-        res.send({ "error": "some error occured while deleting" })
+        console.log(error)
     }
 })
 
-adminRouter.patch("/update",async(req,res)=>{
-
-})
 module.exports={
     adminRouter
 }

@@ -1,9 +1,10 @@
 const express=require("express")
-const adminRouter= express.Router()
+const cartRouter= express.Router()
 const {NoteModel}=require("../Models/note.model")
+const { applianceModel}=require("../Models/appliances.model")
 const jwt=require("jsonwebtoken")
 
-adminRouter.get('/',async (req,res)=>{
+cartRouter.get('/',async (req,res)=>{
     const token=req.headers.authorization
     const decoded=jwt.verify(token,"jammi")
     try{
@@ -16,7 +17,7 @@ adminRouter.get('/',async (req,res)=>{
     }
 })
 
-adminRouter.post("/add", async(req,res)=>{
+cartRouter.post("/add", async(req,res)=>{
     try{
     const note=new NoteModel(req.body)
     await note.save()
@@ -26,33 +27,33 @@ adminRouter.post("/add", async(req,res)=>{
     }
 })
 
-adminRouter.put("/update/:Id", async (req, res) => {
-    let { Id } = req.params
+// cartRouter.put("/update/:Id", async (req, res) => {
+//     let { Id } = req.params
 
-    let newbody = req.body
+//     let newbody = req.body
 
-    try {
-        await NoteModel.findByIdAndUpdate({ _id: Id }, newbody)
-        res.send({ "msg": " Movie dataupdated succesfully" })
-    } catch (error) {
-        res.send({ "error": "some error occured while updating" })
-        console.log(error)
-    }
-})
+//     try {
+//         await NoteModel.findByIdAndUpdate({ _id: Id }, newbody)
+//         res.send({ "msg": " Movie dataupdated succesfully" })
+//     } catch (error) {
+//         res.send({ "error": "some error occured while updating" })
+//         console.log(error)
+//     }
+// })
 
-adminRouter.delete("/delete/:Id", async (req, res) => {
-    let  {Id } = req.params
-    try {
-        await NoteModel.findByIdAndDelete({ _id: Id })
-        res.send({ "message": "Deleted succesfully" })
-    } catch (error) {
-        res.send({ "error": "some error occured while deleting" })
-    }
-})
+// cartRouter.delete("/delete/:Id", async (req, res) => {
+//     let  {Id } = req.params
+//     try {
+//         await NoteModel.findByIdAndDelete({ _id: Id })
+//         res.send({ "message": "Deleted succesfully" })
+//     } catch (error) {
+//         res.send({ "error": "some error occured while deleting" })
+//     }
+// })
 
-adminRouter.patch("/update",async(req,res)=>{
+// cartRouter.patch("/update",async(req,res)=>{
 
-})
+// })
 module.exports={
-    adminRouter
+    cartRouter
 }
