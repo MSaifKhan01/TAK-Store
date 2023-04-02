@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 
-const appliancesSchema = mongoose.Schema({
+const electronicsSchema = mongoose.Schema({
     descriptioin: String,
     image: String,
     stars: Number,
@@ -14,6 +14,6 @@ const appliancesSchema = mongoose.Schema({
     versionKey: false
 })
 
-let applianceModel = mongoose.model("appliances", appliancesSchema)
+let electronicsModel = mongoose.model("electronics", electronicsSchema)
 
-module.exports = { applianceModel }
+module.exports = { electronicsModel }

@@ -27,33 +27,26 @@ cartRouter.post("/add", async(req,res)=>{
     }
 })
 
-// cartRouter.put("/update/:Id", async (req, res) => {
-//     let { Id } = req.params
+cartRouter.patch("/Inc/:id",async (req,res)=>{
+    const {id}=req.params
+    const data=await NoteModel.findByIdAndUpdate({_id:id},{$inc:{quantity:1}})
+    // console.log(data)
+    res.status(200).send({"msg":"Data updated",data:data})
+ })
+ cartRouter.patch("/Dec/:id",async (req,res)=>{
+    const {id}=req.params
+    const data=await NoteModel.findByIdAndUpdate({_id:id},{$inc:{quantity:-1}})
+    // console.log(data)
+    res.status(200).send({"msg":"Data updated",data:data})
+ })
+ cartRouter.delete("/Del/:id",async (req,res)=>{
+    const {id}=req.params
+    const data=await NoteModel.findByIdAndDelete({_id:id})
+    // console.log(data)
+    res.status(200).send({"msg":"Data updated",data:data})
+ })
 
-//     let newbody = req.body
 
-//     try {
-//         await NoteModel.findByIdAndUpdate({ _id: Id }, newbody)
-//         res.send({ "msg": " Movie dataupdated succesfully" })
-//     } catch (error) {
-//         res.send({ "error": "some error occured while updating" })
-//         console.log(error)
-//     }
-// })
-
-// cartRouter.delete("/delete/:Id", async (req, res) => {
-//     let  {Id } = req.params
-//     try {
-//         await NoteModel.findByIdAndDelete({ _id: Id })
-//         res.send({ "message": "Deleted succesfully" })
-//     } catch (error) {
-//         res.send({ "error": "some error occured while deleting" })
-//     }
-// })
-
-// cartRouter.patch("/update",async(req,res)=>{
-
-// })
 module.exports={
     cartRouter
 }

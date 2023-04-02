@@ -5,8 +5,10 @@ const { connecting } = require('./Config/db')
 const { userRouter } = require('./Routes/user.router')
 // const {adminRouter}=require("./Routes/note.routes")
 const {adminRouter}=require("./Routes/appliances.routes")
+const {elecRouter}=require("./Routes/electronics.routes")
 const {cartRouter}=require("./Routes/note.routes")
-
+const {FashionRouter}=require("./Routes/fashion.routes")
+const {payRouter}=require("./Routes/pay.routes")
 
 
 const {auth}=require("./AuthMiddleware/Auth")
@@ -25,10 +27,12 @@ app.use(cors())
 app.use("/user",userRouter)
 
 
-
 app.use("/product",adminRouter)
+app.use("/electronic",elecRouter)
+app.use("/fashion",FashionRouter)
 app.use(auth)
 app.use("/cart",cartRouter)
+app.use("/pay",payRouter)
 
 app.listen(process.env.PORT, async () => {
     try {

@@ -49,6 +49,7 @@
             display: flex;
             min-width: 137px;
             justify-content: flex-end;
+            background-color:  #2874f0;
         }
 
         header .nav-container .logo img {
@@ -201,6 +202,15 @@
             color: white;
             font-size: 16px;
             font-weight: 500;
+        }
+        header .become-seller>img{
+            height: 70%;
+            /* display: flex;
+            align-items: center;
+            margin: 0 20px;
+            color: white;
+            font-size: 16px;
+            font-weight: 500; */
         }
 
         header .more {
@@ -495,7 +505,7 @@ footer{
     <header>
         <div class="nav-container">
             <div class="logo">
-                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+                <img src="./flipkart images/TAK_store4.jpg"
                     alt="logo">
             </div>
             <div class="search">
@@ -521,7 +531,7 @@ footer{
                     <div id="myDropdown" class="dropdown-content">
                       <a href="login.html">Login</a>
                       <a href="signup.html">Register</a>
-                      <a href="electronics.html">Admin</a>
+                      <!-- <a href="electronics.html">Admin</a> -->
                     </div>
                   </div>
                 <!-- <button>
@@ -531,6 +541,8 @@ footer{
             </div>
             <div class="become-seller">
                 Become a Seller
+                <!-- <img src="./flipkart images/user.png" alt="">
+                <h3 id="usrName"></h3> -->
             </div>
             <div class="more">
                 More
@@ -545,7 +557,7 @@ footer{
                         d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86"
                         fill="#fff"></path>
                 </svg>
-                <a style="text-decoration: none;" href="./addTocart.html">Cart</a>
+                <a style="text-decoration: none;color: white;" href="./addTocart.html"> <p>Cart <span id="span"></span></p></a>
                 
             </div>
         </div>
@@ -572,11 +584,13 @@ footer{
             </div>
             <div class="section-1-item">
                 <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/b3e1225e6bda1c9e.png?q=100" alt="">
-                TVs & Appliances
+                <a style="text-decoration: none;" href="appliances.html">TVs & Appliances</a>
+                
             </div>
             <div class="section-1-item">
                 <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/a11d5d13e54bf964.png?q=100" alt="">
-                Fashion
+                <a style="text-decoration: none;" href="fashion.html">Fashion</a>
+                
             </div>
             <div class="section-1-item">
                 <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/5f09b2d254acb48a.png?q=100" alt="">
@@ -1036,6 +1050,9 @@ footer{
 
 <script>
      // sliding part
+     let CartArr = JSON.parse(localStorage.getItem("length")) || [];
+    
+    span.innerText=CartArr
      let imgtag = document.createElement("img");
     let slidediv = document.getElementById("slideshow");
     slidediv.append(imgtag);

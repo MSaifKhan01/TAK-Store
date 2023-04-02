@@ -1,55 +1,55 @@
 const express=require("express")
-const adminRouter= express.Router()
+const elecRouter= express.Router()
 // const {applianceModel}=require("../Models/note.model")
 const jwt=require("jsonwebtoken")
-const { applianceModel }=require("../Models/appliances.model")
+const { electronicsModel }=require("../Models/electronics.model")
 
-adminRouter.get("/",async(req,res)=>{
+elecRouter.get("/",async(req,res)=>{
    
 
     try {
-        let data=await applianceModel.find(req.query)
+        let data=await electronicsModel.find(req.query)
         res.status(200).send(data)
     } catch (error) {
         console.log(error)
     }
 })
-adminRouter.get("/sort1",async(req,res)=>{
+elecRouter.get("/sort1",async(req,res)=>{
    
 
     try {
-        let data=await applianceModel.find().sort({new_price:1})
+        let data=await electronicsModel.find().sort({new_price:1})
         res.status(200).send(data)
     } catch (error) {
         console.log(error)
     }
 })
-adminRouter.get("/sort2",async(req,res)=>{
+elecRouter.get("/sort2",async(req,res)=>{
     
 
     try {
-        let data=await applianceModel.find().sort({new_price:-1})
+        let data=await electronicsModel.find().sort({new_price:-1})
         res.status(200).send(data)
     } catch (error) {
         console.log(error)
     }
 })
-adminRouter.get("/sort3",async(req,res)=>{
+elecRouter.get("/sort3",async(req,res)=>{
    
 
     try {
-        let data=await applianceModel.find().sort({description:1})
+        let data=await electronicsModel.find().sort({description:1})
         res.status(200).send(data)
     } catch (error) {
         console.log(error)
     }
 })
 
-adminRouter.get("/sort4",async(req,res)=>{
+elecRouter.get("/sort4",async(req,res)=>{
    
 
     try {
-        let data=await applianceModel.find().sort({description:-1})
+        let data=await electronicsModel.find().sort({description:-1})
         res.status(200).send(data)
     } catch (error) {
         console.log(error)
@@ -57,7 +57,7 @@ adminRouter.get("/sort4",async(req,res)=>{
 })
 
 
-adminRouter.delete("/delete/:Id", async (req, res) => {
+elecRouter.delete("/delete/:Id", async (req, res) => {
     let  {Id } = req.params
     try {
         await NoteModel.findByIdAndDelete({ _id: Id })
@@ -78,5 +78,5 @@ adminRouter.delete("/delete/:Id", async (req, res) => {
 // })
 
 module.exports={
-    adminRouter
+    elecRouter
 }

@@ -8,7 +8,7 @@ const noteSchema = mongoose.Schema({
     stars: Number,
     new_price: Number,
     size: String,
-    // qty:Number,
+    quantity: Number,
     userID: String
 
 },

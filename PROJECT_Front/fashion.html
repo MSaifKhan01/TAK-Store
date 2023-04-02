@@ -286,7 +286,7 @@
         .bestofElectronic_brand {
             color: rgb(143, 136, 136);
         }
-        #featured{
+#featured{
     width: 10vw;
     height: 5vh;
     background-color: rgb(143, 136, 136);
@@ -337,6 +337,7 @@
             margin-left: 15px;
             border-radius: 4px;
             height: 4vh;
+            padding: 5px;
 
 
         }
@@ -527,7 +528,7 @@
                         d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86"
                         fill="#fff"></path>
                 </svg>
-               <a href="./addTocart.html" style="text-decoration: none;color: white;"><p>Cart <span id="span"></span></p></a> 
+                <a href="./addTocart.html" style="text-decoration: none;color: white;"><p>Cart <span id="span"></span></p></a>
             </div>
         </div>
     </header>
@@ -555,12 +556,7 @@
                        
                     </select>
                 </div>
-               
             </div>
-            <!-- <h>hfjhgjjkmbjk</h> -->
-            
-
-            <!-- <h>gugkjbk</h> -->
         </div>
         <div class="bestofElctronic_product_item">
 
@@ -684,12 +680,11 @@
 
 <script>
     let bestofElctronic_product_itemEl = document.querySelector(".bestofElctronic_product_item")
-   
     let CartArr = JSON.parse(localStorage.getItem("length")) || [];
     
     span.innerText=CartArr
 
-    fetch("http://localhost:8000/product", {
+    fetch("http://localhost:8000/fashion", {
         method: "GET",
         headers: {
             //   authorization: `${sessionStorage.getItem("token")}`,
@@ -714,7 +709,7 @@
         })
         function sorting1(){
            
-            fetch("http://localhost:8000/product/sort1", {
+            fetch("http://localhost:8000/fashion/sort1", {
         method: "GET",
         headers: {
             //   authorization: `${sessionStorage.getItem("token")}`,
@@ -737,7 +732,7 @@
         })
         function sorting2(){
            
-            fetch("http://localhost:8000/product/sort2", {
+            fetch("http://localhost:8000/fashion/sort2", {
         method: "GET",
         headers: {
             //   authorization: `${sessionStorage.getItem("token")}`,
@@ -757,7 +752,7 @@
         let featured=document.getElementById("featured")
         function sorting3(){
            
-           fetch("http://localhost:8000/product/sort3", {
+           fetch("http://localhost:8000/fashion/sort3", {
        method: "GET",
        headers: {
            //   authorization: `${sessionStorage.getItem("token")}`,
@@ -775,7 +770,7 @@
        }
         function sorting4(){
            
-           fetch("http://localhost:8000/product/sort4", {
+           fetch("http://localhost:8000/fashion/sort4", {
        method: "GET",
        headers: {
            //   authorization: `${sessionStorage.getItem("token")}`,
@@ -821,31 +816,7 @@
    
 }
  
-// let searchBtn=document.getElementById("searchBtn")
-// searchBtn.addEventListener("click",()=>{
 
-//     searching()
-// })
-// function searching(){
-//     let searcBox=document.getElementById("searcBox").value
-   
-//     fetch("http://localhost:8000/product/?`${stars=searcBox}`", {
-//         method: "GET",
-//         headers: {
-//             //   authorization: `${sessionStorage.getItem("token")}`,
-//             "content-type": "application/json",
-//         },
-//     })
-//         .then((res) => {
-//             return res.json();
-//         })
-//         .then((data) => {
-//             console.log(data);
-//             display(data);
-//             // display(sorted1)
-//         });
-//         console.log(searcBox)
-// }
       
     function display(data) {
 
@@ -871,11 +842,11 @@
             p2.innerText = `₹${el.new_price}`
             let p3 = document.createElement("p")
             p3.classList.add("bestofElectronic_brand")
-            p3.innerText = el.stars
+            p3.innerText = el.hidden_stars
             
             p3.style.color = 'red'
-            // let p4 = document.createElement("p")
-            // p4.innerText=el.qty
+            let p4 = document.createElement("p")
+            p4.innerText=el.quantity
             let div3 = document.createElement("div")
             div3.classList.add("btndiv")
             let btn1 = document.createElement("button")
