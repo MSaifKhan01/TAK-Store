@@ -684,7 +684,7 @@
     
     span.innerText=CartArr
 
-    fetch("http://localhost:8000/fashion", {
+    fetch("https://glamorous-pear-rugby-shirt.cyclic.app/fashion", {
         method: "GET",
         headers: {
             //   authorization: `${sessionStorage.getItem("token")}`,
@@ -709,7 +709,7 @@
         })
         function sorting1(){
            
-            fetch("http://localhost:8000/fashion/sort1", {
+            fetch("https://glamorous-pear-rugby-shirt.cyclic.app/fashion/sort1", {
         method: "GET",
         headers: {
             //   authorization: `${sessionStorage.getItem("token")}`,
@@ -732,7 +732,7 @@
         })
         function sorting2(){
            
-            fetch("http://localhost:8000/fashion/sort2", {
+            fetch("https://glamorous-pear-rugby-shirt.cyclic.app/fashion/sort2", {
         method: "GET",
         headers: {
             //   authorization: `${sessionStorage.getItem("token")}`,
@@ -752,7 +752,7 @@
         let featured=document.getElementById("featured")
         function sorting3(){
            
-           fetch("http://localhost:8000/fashion/sort3", {
+           fetch("https://glamorous-pear-rugby-shirt.cyclic.app/fashion/sort3", {
        method: "GET",
        headers: {
            //   authorization: `${sessionStorage.getItem("token")}`,
@@ -770,7 +770,7 @@
        }
         function sorting4(){
            
-           fetch("http://localhost:8000/fashion/sort4", {
+           fetch("https://glamorous-pear-rugby-shirt.cyclic.app/fashion/sort4", {
        method: "GET",
        headers: {
            //   authorization: `${sessionStorage.getItem("token")}`,
@@ -874,7 +874,7 @@
         // }
 
 
-        fetch("http://localhost:8000/cart/add",{
+        fetch("https://glamorous-pear-rugby-shirt.cyclic.app/cart/add",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json",

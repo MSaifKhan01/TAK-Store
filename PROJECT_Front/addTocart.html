@@ -680,7 +680,7 @@
 
 
 
-    fetch("http://localhost:8000/cart", {
+    fetch("https://glamorous-pear-rugby-shirt.cyclic.app/cart", {
         method: "GET",
         headers: {
             authorization: `${sessionStorage.getItem("token")}`,
@@ -738,7 +738,7 @@
 
             Remove.addEventListener("click", () => {
 
-                fetch(`http://localhost:8000/cart/Del/${product._id}`, {
+                fetch(`https://glamorous-pear-rugby-shirt.cyclic.app/cart/Del/${product._id}`, {
                     method: "DELETE",
                     headers: {
                         "Authorization": `${sessionStorage.getItem("token")}`,
@@ -760,7 +760,7 @@
             Increment.addEventListener("click", () => {
              
 
-                fetch(`http://localhost:8000/cart/Inc/${product._id}`,{
+                fetch(`https://glamorous-pear-rugby-shirt.cyclic.app/cart/Inc/${product._id}`,{
         method:"PATCH",
         headers:{
           "Content-Type":"application/json",
@@ -793,7 +793,7 @@
             Decrement.addEventListener("click", () => {
                 if (product.quantity > 1) {
                   
-                fetch(`http://localhost:8000/cart/Dec/${product._id}`,{
+                fetch(`https://glamorous-pear-rugby-shirt.cyclic.app/cart/Dec/${product._id}`,{
         method:"PATCH",
         headers:{
           "Content-Type":"application/json",
