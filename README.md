@@ -65,11 +65,13 @@ Electronics product page which is having same functionality as fashion product p
 
 All product item having add to cart button if you click then it will store in database of cart page
 
+Every item having increment ,decrement,and Remove button All the have functionality of increment ,decrement,and Remove
+
 ![addtocart](https://user-images.githubusercontent.com/119418918/229374238-d5466fcd-a309-4ba6-adb4-a5a92473e6ae.jpg)
   
-Every item having increment ,decrement,and Remove button All the have functionality of increment ,decrement,and Remove
-  
-    after increment price also increased
+
+   after increment price also increased
+   
   ![addtocart1](https://user-images.githubusercontent.com/119418918/229374353-04af7812-213a-4920-b73d-6b11c8fd41a8.jpg)
   
    after decrement price also decreased
