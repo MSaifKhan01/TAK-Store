@@ -1,7 +1,12 @@
 Frontend:- Link
 https://stately-gumption-569f64.netlify.app
+
+
 Backend:-Link 
 https://glamorous-pear-rugby-shirt.cyclic.app
+
+
+
 This is a individual project which is a  e-commerce web My web name is TAK-Store
 This is the landing page which have  electronics page , TV & Appliances and Fashion product page .  product pages having search sorting and filtering functionality and having add To cart page and also having payment page .
 
