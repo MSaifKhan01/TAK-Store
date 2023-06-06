@@ -1,83 +1,71 @@
-
-# COOL CLOTH
-Frontend:https://bucolic-malasada-a43ddd.netlify.app
-backend:https://upset-red-outfit.cyclic.app
-
-This is a collaborative project made with the collaboration of 4 members. The team leader of this project was Saif and other team menbers are Rupesh, Monojoy, Prashant and Shankar. The Tech Stack used in the creation of this website are HTML, CSS, Java Script and Bootstrap.
-
-Rupesh was responsible for the creation of the landing page 
-![Screenshot (229)](https://user-images.githubusercontent.com/63779583/221470810-0d7cb71f-f97e-44a7-afcb-6a2b87ca40e4.png)
-![Screenshot (230)](https://user-images.githubusercontent.com/63779583/221471219-3df26ac0-772a-4689-8416-0711ff4ecad0.png)
-![Screenshot (231)](https://user-images.githubusercontent.com/63779583/221471512-b0204fca-8499-438c-9038-567be402012e.png)
-![Screenshot (232)](https://user-images.githubusercontent.com/63779583/221471541-11015049-598b-4a9b-b080-41fc0ca63c24.png)
-![Screenshot (233)](https://user-images.githubusercontent.com/63779583/221471583-45fa96df-6267-4a36-b932-5672ec43e90a.png)
-![Screenshot (234)](https://user-images.githubusercontent.com/63779583/221471597-2f059d69-57e6-4a33-9dce-04dc4c5e51bb.png)
+Frontend:- Link
+https://stately-gumption-569f64.netlify.app
 
 
-Monoojoy Created the login SignUp page and edit product through admin page
-![Screenshot (235)](https://user-images.githubusercontent.com/63779583/221472142-4be3a8bb-f387-46f5-81a7-a76e10305c50.png)
-![Screenshot (236)](https://user-images.githubusercontent.com/63779583/221472261-5107e715-4772-4b05-8b06-60c695311b2e.png)
-Before Updating Product
-![Screenshot (237)](https://user-images.githubusercontent.com/63779583/221473412-349d378b-d5bd-401d-a264-4fa568dcf921.png)
-updation Form
-![Screenshot (238)](https://user-images.githubusercontent.com/63779583/221473473-b4462708-aad2-41e7-ba6c-2eb01c0b39dc.png)
-After Updation
-![Screenshot (239)](https://user-images.githubusercontent.com/63779583/221473540-52941dec-c058-4989-b926-e9f15f7cd896.png)
-
-
-Prashant created the product detail page for men and women and also added Searching and Sorting Features
-![Screenshot (240)](https://user-images.githubusercontent.com/63779583/221474815-1cac7a40-8b52-49f0-948a-5ad2c0704549.png)
-![Screenshot (241)](https://user-images.githubusercontent.com/63779583/221474827-18fc76d9-8e77-4516-9573-17edc91fdf8f.png)
-Search Functionality 
-![Screenshot (243)](https://user-images.githubusercontent.com/63779583/221474993-fc44a30d-4279-4401-945b-ec918a1fcc6a.png)
-Sorting Functionality
-![Screenshot (244)](https://user-images.githubusercontent.com/63779583/221474874-551d7e89-73f8-4c48-92ac-388ddb7c6fbf.png)
-![Screenshot (245)](https://user-images.githubusercontent.com/63779583/221475019-db32c50b-a386-4a6f-bd1a-8609dd7fb49f.png)
-Product Detail Page
-![Screenshot (246)](https://user-images.githubusercontent.com/63779583/221475057-a5847faf-8b32-488d-8ce4-dc3d4bf4b5d8.png)
-
-
-Saif created the card page and added new product through the admin
-![Screenshot (247)](https://user-images.githubusercontent.com/63779583/221476378-7d274bb8-d73b-44cc-8914-f22392b9032a.png)
-![Screenshot (248)](https://user-images.githubusercontent.com/63779583/221476419-f27f8570-656b-4702-bc59-4ee31d1675d8.png)
-Before New Product is added
-![Screenshot (250)](https://user-images.githubusercontent.com/63779583/221476488-a0e08f3c-f026-43e1-9261-23653d9140c1.png)
-After Product added 
-![Screenshot (251)](https://user-images.githubusercontent.com/63779583/221476533-6c4ad3f7-76b0-43c6-aa06-b1476865508d.png)
-Added product displays at the last
-![Screenshot (252)](https://user-images.githubusercontent.com/63779583/221476578-0bea727d-647e-4768-9162-3c5a59d8fd57.png)
-
-
-Shankar created the admin page and the  dashboard page for the admin
-![Screenshot (253)](https://user-images.githubusercontent.com/63779583/221477165-e5b378c1-2b8a-41a3-b1f4-d4709ac3b8ac.png)
-![Screenshot (254)](https://user-images.githubusercontent.com/63779583/221477196-0b929250-0b00-4fde-9d54-3511c834e985.png)
-![Screenshot (255)](https://user-images.githubusercontent.com/63779583/221477228-9a8d4c5b-044e-4669-966f-d263a995a65a.png)
-![Screenshot (256)](https://user-images.githubusercontent.com/63779583/221477239-7ef330dd-dcf4-4b21-9ab4-8f83d042ffd5.png)
-Dark Mode in Dashboard
-![Screenshot (257)](https://user-images.githubusercontent.com/63779583/221477275-df03a41e-8e51-4293-a603-dc438c161447.png)
-
-With a lot of efforts made by evey team member we were able to complter this project in a time span of 6 days.
+Backend:-Link 
+https://glamorous-pear-rugby-shirt.cyclic.app
 
 
 
+This is a individual project which is a  e-commerce web My web name is TAK-Store
+This is the landing page which have  electronics page , TV & Appliances and Fashion product page .  product pages having search sorting and filtering functionality and having add To cart page and also having payment page .
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+This is landing page
+![landing](https://user-images.githubusercontent.com/119418918/229370059-a51be6d8-c300-40f3-a2aa-55f35dfe0770.jpg)
+![landlogin](https://user-images.githubusercontent.com/119418918/229373303-4df37f10-3ccc-4aca-806a-a58b3c3102e3.jpg)
+![landing2](https://user-images.githubusercontent.com/119418918/229372974-1bcd147f-91c8-4c72-b4e5-9161b81fc45d.jpg)
+this is the footer
+![footer](https://user-images.githubusercontent.com/119418918/229373052-b3380cf1-9668-4628-b465-d4611e075ec1.jpg)
+signup page before filling credential
+![signup](https://user-images.githubusercontent.com/119418918/229373126-57335345-b22c-447b-b4b7-2dffb23eb6c8.jpg)
+signup page after filling credential and this data of a user will store in the dataBase and password will store in hashing to protect from the hackers
+![signup1](https://user-images.githubusercontent.com/119418918/229373202-96ccb357-ec5c-43af-bf59-0a247ebd66b0.jpg)
+login page before filling credential
+![login](https://user-images.githubusercontent.com/119418918/229373340-a6d10ac1-d842-4f65-8c32-67d463619d29.jpg)
+login page after filling credential and this data of a user will match in the dataBase after that redirect you on some authenticated routes
+![login1](https://user-images.githubusercontent.com/119418918/229373565-d5cb7243-6791-45ef-9b90-6407967d7fc2.jpg)
+Data of Fashion products coming from DataBase 
+![fashion](https://user-images.githubusercontent.com/119418918/229373635-75497218-f26a-4e25-bc56-66ff28d2cc07.jpg)
+![fashion1](https://user-images.githubusercontent.com/119418918/229373711-e79c49dd-5384-4af0-8717-863d157a33f8.jpg)
+searching functionalty
+![fashionsearch](https://user-images.githubusercontent.com/119418918/229373738-1337bf65-2d94-4ba5-bc3a-46a07c4bfcd2.jpg)
+A To Z sorting
+![atoz_fashion](https://user-images.githubusercontent.com/119418918/229373783-a7bff76d-a8bd-4915-868d-64c067a6ed74.jpg)
+Z To A sorting
+![ztoa_fashion](https://user-images.githubusercontent.com/119418918/229373827-a248b505-1629-4fa3-880a-0f6b37a1f48d.jpg)
+Low To High sorting By price
+![Ltoh_fashion](https://user-images.githubusercontent.com/119418918/229373849-e20b192f-1d07-41bb-8e81-6627cb8b2784.jpg)
+High To Low sorting By price
+![HtoL_fashion](https://user-images.githubusercontent.com/119418918/229373892-9ac2a9ec-0a42-4129-9b8f-fb5418661dd1.jpg)
+TV & Appliances product page which is having same functionality as fashion product page
+![TvAppliances](https://user-images.githubusercontent.com/119418918/229373935-689a4652-12fa-459b-8d37-8f66edb49f35.jpg)
+![TvAppliances1](https://user-images.githubusercontent.com/119418918/229373946-9a73c4b5-7ab9-4b97-8bae-56e35ff26a58.jpg)
+Electronics product page which is having same functionality as fashion product page
+![electronic](https://user-images.githubusercontent.com/119418918/229374068-ca79e416-64b4-4b0b-8bef-f1f0a9feb83e.jpg)
+![electronic1](https://user-images.githubusercontent.com/119418918/229374058-ee59066b-dcf7-4379-ac08-d22758521e4e.jpg)
+All product item having add to cart button if you click then it will store in database of cart page
+Every item having increment ,decrement,and Remove button All the have functionality of increment ,decrement,and Remove
+![addtocart](https://user-images.githubusercontent.com/119418918/229374238-d5466fcd-a309-4ba6-adb4-a5a92473e6ae.jpg)
+  
+   after increment price also increased
+   
+  ![addtocart1](https://user-images.githubusercontent.com/119418918/229374353-04af7812-213a-4920-b73d-6b11c8fd41a8.jpg)
+  
+   after decrement price also decreased
+  ![addtocart2](https://user-images.githubusercontent.com/119418918/229374391-666b0f6f-564f-43e0-a22e-8efa6f443271.jpg)
+  
+  after Removing item which was at top it will delete  from data base
+  
+  ![addtocart3](https://user-images.githubusercontent.com/119418918/229374455-fb19d0a3-c97c-43ca-b5d3-e194f7e6b766.jpg)
+  
+   place Order button redirect on payment page
+  ![addtocart4](https://user-images.githubusercontent.com/119418918/229374692-a9a80022-fd35-4903-a1a7-b9fea127e051.jpg)
+  
+  
+  payment page before filling credential
+  ![payment](https://user-images.githubusercontent.com/119418918/229374728-ac975bca-65e0-42be-b259-cffc66ca218d.jpg)
+  
+   payment page after filling credential and Data will store in Database
+   
+   ![payment1](https://user-images.githubusercontent.com/119418918/229374798-df506631-cb1e-4519-9bd4-71b66b87e34a.jpg)
+  
