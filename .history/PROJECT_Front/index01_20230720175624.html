@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flipkart Navbar</title>
+    <!-- cdn link of font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- cdn link of bootstrap for css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* CSS styles for the navbar */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .navbar {
+        background-color: #0978ee;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        /* flex-direction: row; */
+        align-items: center;
+      }
+
+      .navbar-brand {
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        width: 10%;
+        font-size: 15px;
+      }
+
+      .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        font-size: 18px;
+        list-style-type: none;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Search bar styles */
+      .search-container {
+        display: flex;
+        width: 450px;
+        max-width: 350px;
+      
+        margin-left: 190px;
+       
+        margin-bottom: 10px;
+        /* Added to separate the search bar in responsive mode */
+      }
+
+      input[type="text"] {
+        flex: 1;
+        padding: 10px;
+        border: none;
+      }
+
+      button[type="submit"] {
+        margin-right: 120px;
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      .navbar-nav li {
+        margin-right: 15px;
+      }
+
+      .navbar-nav li a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      /* CSS styles for responsive design */
+      @media (max-width: 400px) {
+        .navbar {
+          flex-direction: column;
+        }
+
+        .navbar-nav {
+          margin-top: 10px;
+          flex-direction: column;
+        }
+
+        .navbar-nav li {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+
+      @media (min-width: 601px) {
+        /* Additional styles for larger screens */
+        .search-container {
+          max-width: 500px;
+        }
+
+        input[type="text"] {
+          padding: 8px;
+        }
+
+        button[type="submit"] {
+          padding: 8px 16px;
+        }
+      }
+
+      /* CSS styles for sub-navbar */
+      .sub-navbar {
+        background-color: #f1f1f1;
+        padding: 10px;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        /* overflow-x: auto; */
+      }
+
+      .sub-navbar-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-right: 15px;
+        width: 60px;
+        /* height: 60px; */
+        border-radius: 50%;
+        background-color: #f1f1f1;
+      }
+      #logoutName{
+        color: #f1f1f1;
+      }
+      #logoutName button{
+        background-color: #45a049;;
+        color: #f1f1f1;
+        border-radius: 5px;
+        padding: 3px;
+        
+      }
+
+      .sub-navbar-item img {
+        width: 64px;
+      }
+
+      .subNav {
+        display: block;
+      }
+
+      #slideshow > img {
+        width: 100%;
+      }
+
+      .carousel-item img {
+        width: 100%;
+        height: 100%;
+      }
+
+      /* #first{
+      width: 50%;
+      height: 50%;
+    } */
+      .footer-items {
+        display: flex;
+        justify-content: space-around;
+        background-color: dimgray;
+        color: white;
+      }
+
+      #List-head {
+        font-size: 25px;
+        font-weight: bold;
+        color: black;
+      }
+
+      #product {
+        border-radius: 5px;
+        padding: 40px;
+        margin-bottom: 20px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }
+
+      /* .card img{
+
+      background-color: blue;
+    } */
+
+      /* .card div{
+      margin-left: 40px;
+    } */
+      /* .carousel-item{
+display: flex;
+justify-content:space-around;
+    } */
+      #carroDiv {
+        width: 90%;
+        margin: auto;
+      }
+
+      .smallimages {
+        display: flex;
+        justify-content: space-around;
+        /* align-items: center; */
+      }
+
+      .topHead {
+        display: flex;
+        justify-content: space-between;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-bottom: 40px;
+      }
+
+      .common-heading-left {
+        padding: 20px;
+      }
+
+      .common-heading-left > h2 {
+        color: gray;
+      }
+
+      .ViewButton > h3 {
+        margin: 30px;
+        padding: 20px;
+        background-color: #0978ee;
+      }
+
+      /* Basic styling for the dropdown */
+      /* .dropdown {
+      position: relative;
+      display: inline-block;
+    } */
+
+      /* Style the dropdown arrow using a pseudo-element */
+      /* .dropdown::after {
+    
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    } */
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="navbar-brand logo"
+          ><img src="./flipkart images/TAK_store4.jpg" alt="logo"
+        /></a>
+        <div class="search-container">
+          <input type="text" placeholder="Search..." />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <ul class="navbar-nav">
+          <li>
+            <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+          </li>
+
+          <!-- <li>
+
+  <div class="dropdown">
+    <select id="dropdownSelect">
+      <option value="" selected disabled><a href="#"><i class="fa-solid fa-user"></i> Login</a></option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+      
+    </select>
+  </div>
+</li> -->
+
+          <li id="logoutName">
+            <a href="./login.html" id="nameshow"><i class="fa-solid fa-user"></i> Login</a>
+          </li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Deals</a></li>
+          <li>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+            <!-- <a href="#">Cart</a> -->
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sub-navbar">
+        <div class="sub-navbar-item">
+          <div class="subNav">
+            <img
+              src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/6e3e1efa83bc56c3.png?q=100"
+              alt=""
+            />
+            <a style="text-decoration: none" href="electronics.html"
+              >Electronics</a
+            >
+          </div>
+        </div>
+        <div class="sub-navbar-item">
+          <div class="subNav">
+            <img
+              src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/b3e1225e6bda1c9e.png?q=100"
+              alt=""
+            />
+            <a style="text-decoration: none" href="appliances.html"
+              >TVs & Appliances</a
+            >
+          </div>
+        </div>
+        <div class="sub-navbar-item">
+          <div class="subNav">
+            <img
+              src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/a11d5d13e54bf964.png?q=100"
+              alt=""
+            />
+            <a style="text-decoration: none" href="fashion.html">Fashion</a>
+          </div>
+        </div>
+        <div class="sub-navbar-item">
+          <div class="subNav">
+            <img
+              src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/6e3e1efa83bc56c3.png?q=100"
+              alt=""
+            />
+            <a style="text-decoration: none" href="electronics.html"
+              >Electronics</a
+            >
+          </div>
+        </div>
+        <div class="sub-navbar-item">
+          <div class="subNav">
+            <img
+              src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/b3e1225e6bda1c9e.png?q=100"
+              alt=""
+            />
+            <a style="text-decoration: none" href="appliances.html"
+              >TVs & Appliances</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="slideshow">
+      <!-- appending the data here -->
+    </div>
+
+    <!-- Bootstrap carrosal start-->
+
+    <div class="topHead">
+      <div class="common-heading-left">
+        <h1>Top Deals on Electronics</h1>
+        <h2>Up to 70% OFF</h2>
+      </div>
+      <div class="ViewButton">
+        <h3>View All</h3>
+      </div>
+    </div>
+
+    <div id="carroDiv">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="smallimages">
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/s1.jpeg" alt="mobile" />
+
+                <h3>Bluetooth Headphones</h3>
+                <h4>new lancher</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 399</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/s2.jpeg" alt="mobile" />
+                <h3>techo speaker</h3>
+                <h4>new lancher</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 499</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/s5.jpeg" alt="mobile" />
+                <h3>speaker</h3>
+                <h4>new lancher</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 139</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/s3.jpeg" alt="mobile" />
+
+                <h3>true wireless</h3>
+                <h4>new lancher</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 159</h6>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="smallimages">
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/s4.jpeg" alt="mobile" />
+                <h3>wired hearphones</h3>
+                <h4>new lancher</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 239</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/s2.jpeg" alt="mobile" />
+                <h3>techo speaker</h3>
+                <h4>new lancher</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 499</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/s5.jpeg" alt="mobile" />
+                <h3>speaker</h3>
+                <h4>new lancher</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 139</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/s6.jpeg" alt="mobile" />
+                <h3>Bluetooth Headphones</h3>
+                <h4>new lancher</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 1899</h6>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="smallimages">
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/s2.jpeg" alt="mobile" />
+                <h3>techo speaker</h3>
+                <h4>new lancher</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 499</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/s4.jpeg" alt="mobile" />
+                <h3>wired hearphones</h3>
+                <h4>new lancher</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 239</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/s7.jpeg" alt="mobile" />
+                <h3>Bluetooth Headphones</h3>
+                <h4>new lancher</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 999</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/s6.jpeg" alt="mobile" />
+                <h3>Bluetooth Headphones</h3>
+                <h4>new lancher</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 1899</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+          style="
+            color: red;
+            background-color: blue;
+            height: 30px;
+            width: 30px;
+            margin: auto;
+            border-radius: 50%;
+            padding: 5px;
+          "
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+          style="
+            color: red;
+            background-color: blue;
+            height: 30px;
+            width: 30px;
+            margin: auto;
+            border-radius: 50%;
+            padding: 5px;
+          "
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- carrosel 2 from  here start -->
+
+    <div class="topHead">
+      <div class="common-heading-left">
+        <h1>Best Battery Phones</h1>
+        <h2>More than 4000mAh</h2>
+      </div>
+      <div class="ViewButton">
+        <h3>View All</h3>
+      </div>
+
+      <!-- due to below div css changing so below div is very imp not move from their position -->
+    </div>
+
+    <div id="carroDiv">
+      <
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="smallimages">
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/p1.jpeg" alt="mobile" />
+                <h3>Poco m2 pro</h3>
+                <h4>5000mAh Bttery</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 1399</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/p5.jpeg" alt="mobile" />
+                <h3>realme</h3>
+                <h4>5000mAh Bttery</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 1699</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/p2.jpeg" alt="mobile" />
+                <h3>techo spark</h3>
+                <h4>4500mAh Bttery</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 1499</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/p3.jpeg" alt="mobile" />
+                <h3>vivio</h3>
+                <h4>5000mAh Bttery</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 1159</h6>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="smallimages">
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/p4.jpeg" alt="mobile" />
+                <h3>samsung</h3>
+                <h4>5500mAh Bttery</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 2399</h6>
+              </div>
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/p7.jpeg" alt="mobile" />
+                <h3>samsung</h3>
+                <h4>5000mAh Bttery</h4>
+                <h6>Now <i class="fas fa-rupee-sign"></i> 11999</h6>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 2399</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/p5.jpeg" alt="mobile" />
+                <h3>realme</h3>
+                <h4>5000mAh Bttery</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 1699</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/p6.jpeg" alt="mobile" />
+                <h3>oppo pro</h3>
+                <h4>5200mAh Bttery</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 1359</h6>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="smallimages">
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/p7.jpeg" alt="mobile" />
+                <h3>samsung</h3>
+                <h4>5000mAh Bttery</h4>
+                <h6>Now <i class="fas fa-rupee-sign"></i> 11999</h6>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 2399</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/p1.jpeg" alt="mobile" />
+                <h3>Poco m2 pro</h3>
+                <h4>5000mAh Bttery</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 1399</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/p2.jpeg" alt="mobile" />
+                <h3>techo spark</h3>
+                <h4>4500mAh Bttery</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 1699</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/p5.jpeg" alt="mobile" />
+                <h3>realme</h3>
+                <h4>5000mAh Bttery</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 1359</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+          style="
+            color: red;
+            background-color: blue;
+            height: 30px;
+            width: 30px;
+            margin: auto;
+            border-radius: 50%;
+            padding: 5px;
+          "
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+          style="
+            color: red;
+            background-color: blue;
+            height: 30px;
+            width: 30px;
+            margin: auto;
+            border-radius: 50%;
+            padding: 5px;
+          "
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <hr />
+    <!-- carrosel 3 from  here start -->
+
+    <div class="topHead">
+      <div class="common-heading-left">
+        <h1>trending offers</h1>
+        <h2>Up to 25% OFF</h2>
+      </div>
+      <div class="ViewButton">
+        <h3>View All</h3>
+      </div>
+    </div>
+
+    <div id="carroDiv">
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="smallimages">
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/w1.jpeg" alt="mobile" />
+                <h3>cotton shirt</h3>
+                <h4>up to 20% off</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 399</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/c2.jpeg" alt="mobile" />
+                <h3>t-shirt black</h3>
+                <h4>up to 20% off</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 499</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/w2.jpeg" alt="mobile" />
+                <h3>fast-trsct watch</h3>
+                <h4>up to 20% off</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 499</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/w3.jpeg" alt="mobile" />
+                <h3>saree</h3>
+                <h4>up to 20% off</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 1159</h6>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="smallimages">
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/f1.jpeg" alt="mobile" />
+                <h3>swing chair</h3>
+                <h4>up to 20% off</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 1399</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/w2.jpeg" alt="mobile" />
+                <h3>fast-trsct watch</h3>
+                <h4>up to 20% off</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 499</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/f2.jpeg" alt="mobile" />
+                <h3>bean bag cover</h3>
+                <h4>up to 20% off</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 1499</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/f3.jpeg" alt="mobile" />
+                <h3>furniture</h3>
+                <h4>up to 20% off</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 1159</h6>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="smallimages">
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/c1.jpeg" alt="mobile" />
+                <h3>t-shirt</h3>
+                <h4>up to 20% off</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 399</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/c2.jpeg" alt="mobile" />
+                <h3>t-shirt black</h3>
+                <h4>up to 20% off</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 499</h6>
+              </div>
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/w2.jpeg" alt="mobile" />
+                <h3>fast-trsct watch</h3>
+                <h4>up to 20% off</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 499</h6>
+              </div>
+
+              <div class="card" style="width: 18rem" id="product">
+                <img src=" flipkart images/c3.jpeg" alt="mobile" />
+                <h3>cap</h3>
+                <h4>up to 20% off</h4>
+                <h6>Now <i class="fa-solid fa-indian-rupee-sign"></i> 159</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+          style="
+            color: red;
+            background-color: blue;
+            height: 30px;
+            width: 30px;
+            margin: auto;
+            border-radius: 50%;
+            padding: 5px;
+          "
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+          style="
+            color: red;
+            background-color: blue;
+            height: 30px;
+            width: 30px;
+            margin: auto;
+            border-radius: 50%;
+            padding: 5px;
+          "
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Bootstrap carrosal End-->
+
+    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+
+    <!-- Footer start here and some inline css applied  -->
+
+    <div class="card text-center">
+      <div class="card-header" style="margin-top: 30px">Featured</div>
+      <div class="footer-items">
+        <div class="footerlist">
+          <ul style="list-style: none">
+            <li id="List-head">ABOUT</li>
+            <li>
+              <hr />
+            </li>
+            <li>Contact Us</li>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Flipkart Stories</li>
+            <li>Flipkart Wholesale</li>
+          </ul>
+        </div>
+
+        <div class="footerlist">
+          <ul style="list-style: none">
+            <li id="List-head">HELP</li>
+            <li>
+              <hr />
+            </li>
+            <li>Payments</li>
+            <li>Shipping</li>
+            <li>Cancellation & Returns</li>
+            <li>FAQ</li>
+            <li>Report Infringement</li>
+          </ul>
+        </div>
+
+        <div class="footerlist">
+          <ul style="list-style: none">
+            <li id="List-head">POLICY</li>
+            <li>
+              <hr />
+            </li>
+            <li>Return Policy</li>
+            <li>Terms Of Use</li>
+            <li>Privacy</li>
+            <li>Sitemap</li>
+            <li>EPR Compliance</li>
+          </ul>
+        </div>
+        <hr />
+        <div class="footerlist">
+          <ul style="list-style: none">
+            <li id="List-head">Contect Us</li>
+            <li>
+              <hr />
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; color: white"
+                ><i class="fa-brands fa-facebook"></i> Facebook</a
+              >
+            </li>
+            <br />
+            <li>
+              <a href="" style="text-decoration: none; color: white"
+                ><i class="fa-brands fa-linkedin"></i> Linkdin</a
+              >
+            </li>
+            <br />
+            <li>
+              <a href="" style="text-decoration: none; color: white"
+                ><i class="fa-brands fa-github"></i> Github</a
+              >
+            </li>
+            <br />
+          </ul>
+        </div>
+
+        <hr />
+        <div class="footerlist">
+          <ul style="list-style: none">
+            <li id="List-head">Mail Us</li>
+            <li>
+              <hr />
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; color: white"
+                ><i class="fa-solid fa-envelope"></i> Mail Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <!--  Footer End Here -->
+
+    <!-- Rest of your website content here -->
+  </body>
+</html>
+<!-- cdn link of bootstrap for js -->
+
+<script
+  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+  integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+  crossorigin="anonymous"
+></script>
+
+<script>
+  let logoutName=document.getElementById("logoutName")
+let nametag=document.getElementById("nameshow")
+let token=sessionStorage.getItem("token")
+  let name=sessionStorage.getItem("name")
+  if(token){
+    nametag.style.display="none"
+    logoutName.innerHTML=`<i class="fa-solid fa-user"></i> ${name}`
+    let p=document.createElement("span")
+    p.innerHTML=`<button>Logout</button>`
+    p.style.marginLeft="5px"
+    logoutName.append(p)
+    logoutName.addEventListener("click",()=>{
+      sessionStorage.clear()
+      window.location.href = "./index01.html";
+    })
+  }
+  let imgtag = document.createElement("img");
+
+  let slidediv = document.getElementById("slideshow");
+  slidediv.append(imgtag);
+  let currentIndex = 0;
+
+  var slideImages = [
+    "flipkart images/banner1.jpg",
+    "flipkart images/banner2.jpg",
+    "flipkart images/banner3.jpg",
+    "flipkart images/banner4.jpg",
+  ];
+  slideshowFun(slideImages);
+
+  function slideshowFun(images) {
+    imgtag.setAttribute("src", images[currentIndex]);
+    if (currentIndex == images.length - 1) {
+      currentIndex = 0;
+    } else {
+      currentIndex++;
+    }
+  }
+  window.addEventListener("load", function () {
+    setInterval(slideshowFun, 2000, slideImages);
+  });
+
+
+</script>

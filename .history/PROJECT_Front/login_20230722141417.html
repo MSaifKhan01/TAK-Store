@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login form</title>
+  <link rel="stylesheet" href="LoginSignup.css">
+   <!-- Font Awesome Cdn Link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Welcome Again!</h1>
+    <!-- <p>Welcome back you've <br> been missed!</p> -->
+    <form>
+      <input type="email" placeholder="Enter email" id="email">
+      <input type="password" placeholder="Password" id="pass">
+      <p class="recover">
+        <a href="./ForgotPass.html">Reset Password</a>
+      </p>
+    <closeform></closeform></form>
+    <button id="submit">Sign in</button>
+    <p class="or">
+      ----- or continue with -----
+    </p>
+    <div class="icons">
+      <a href="http://localhost:8000/user/auth/google">
+        <i class="fab fa-google"></i>
+        </a>
+      <!-- <i class="fab fa-github"></i>
+      <i class="fab fa-facebook"></i> -->
+    </div>
+    <div class="not-member">
+      Not a member? <a href="./Signup.html">Register Now</a>
+    </div>
+  </div>
+</body>
+</html>
+
+
+<script>
+    document.getElementById("submit").addEventListener("click", () => {
+     let email = document.getElementById("email").value;
+     let password = document.getElementById("pass").value;
+
+     let res = fetch("http://localhost:8000/user/login", {
+       method: "POST",
+       headers: {
+         "content-type": "application/json",
+       },
+       body: JSON.stringify({ email, password }),
+     })
+       .then((res) => {
+         return res.json();
+       })
+       .then((data) => {
+         console.log(data);
+         if(data.token){
+          sessionStorage.setItem("token", data.token);
+          sessionStorage.setItem("name", data.name);
+         
+         alert("login sucessfull!");
+         window.location.href = "./index.html";
+         }
+         
+       })
+       .catch((err) => {
+         console.log(err);
+       });
+
+  
+   });
+</script>

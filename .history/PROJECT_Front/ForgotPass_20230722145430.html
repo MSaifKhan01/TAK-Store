@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login form</title>
+  <link rel="stylesheet" href="LoginSignup.css">
+   <!-- Font Awesome Cdn Link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Welcome Again!</h1>
+    <!-- <p>Welcome back you've <br> been missed!</p> -->
+    <form>
+      <input type="email" placeholder="Enter email" id="email">
+      <input type="password" placeholder="Current Password" id="Currpass">
+      <input type="password" placeholder="New Password" id="Newpass">
+    <closeform></closeform></form>
+    <button id="submit">Reset Password</button>
+    <p class="or">
+      ----- or continue with -----
+    </p>
+    <div class="icons">
+      <a href="http://localhost:8000/user/auth/google">
+        <i class="fab fa-google"></i>
+        </a>
+      <!-- <i class="fab fa-github"></i>
+      <i class="fab fa-facebook"></i> -->
+    </div>
+    <div class="not-member">
+     <a href="./login.html">Login here</a>
+    </div>
+  </div>
+</body>
+</html>
+
+
+<script>
+    document.getElementById("submit").addEventListener("click", () => {
+    //  let email = document.getElementById("email").value;
+     let CurrPassword = document.getElementById("Currpass").value;
+     let NewPassword = document.getElementById("Newpass").value;
+
+     let res = fetch(`http://localhost:8000/${userId}/reset`, {
+       method: "PATCH",
+       headers: {
+         "content-type": "application/json",
+       },
+       body: JSON.stringify({CurrPassword,NewPassword }),
+     })
+       .then((res) => {
+         return res.json();
+       })
+       .then((data) => {
+         console.log(data);
+         if(data.ok){
+        //   sessionStorage.setItem("token", data.token);
+        //   sessionStorage.setItem("name", data.name);
+         
+         alert("Password Updated!");
+         window.location.href = "./login.html";
+         }
+         
+       })
+       .catch((err) => {
+         console.log(err);
+       });
+
+  
+   });
+</script>
+
+<script>
+
+
+</script>
+
+<!-- <script>
+    // Function to handle the form submission
+    async function handleResetPassword() {
+      const email = document.getElementById('email').value;
+      const currPass = document.getElementById('Currpass').value;
+      const newPass = document.getElementById('Newpass').value;
+
+      try {
+        const response = await fetch(`/user/${userId}/reset`, {
+          method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            email: email,
+            currPass: currPass,
+            newPass: newPass,
+          }),
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          alert(data.msg); // Password updated successfully
+          // You can redirect the user to the login page or perform other actions as needed
+        } else {
+          alert(data.msg); // Display error message
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        alert('An error occurred. Please try again.');
+      }
+    }
+
+    // Event listener for the "Reset Password" button
+    const resetPasswordBtn = document.getElementById('submit');
+    resetPasswordBtn.addEventListener('click', handleResetPassword);
+  </script> -->

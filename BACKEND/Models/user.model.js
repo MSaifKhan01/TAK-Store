@@ -6,7 +6,11 @@ const userSchema = mongoose.Schema({
     email: String,
     mobile_No: Number,
     password: String,
-    age : Number
+    age : Number,
+    // image:{
+    //     data:Buffer,
+    //     contentType:String
+    // }
 
 },{
     versionKey : false

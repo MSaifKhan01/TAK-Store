@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/addToCart.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/Index.css">
+    <style>
+       
+    </style>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+
+    <header >
+        <nav class="navbar">
+          <a href="#" class="navbar-brand logo"
+            ><img src="./flipkart images/Tak_logo.png" alt="logo"
+          /></a>
+          <div class="search-container">
+            <input id="searcBox" type="text" placeholder="Search..." />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </div>
+          <ul class="navbar-nav">
+            <li>
+              <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+  
+   
+  
+            <li id="logoutName">
+              <a href="./login.html" id="nameshow"><i class="fa-solid fa-user"></i> Login</a>
+            </li>
+          
+            <li>
+              <a href="addTocart.html"><i class="fa-solid fa-cart-shopping"><span id="Cartlength"></span></i> Cart</a>
+             
+            </li>
+          </ul>
+        </nav>
+  
+      </header>
+    <!-- nav end -->
+
+   
+    <div class="main">
+        <div id="cart-container">
+            <!-- Here Append All the cart Products -->
+
+        </div>
+
+        <div class="amount">
+            <div>
+                <h1 id="total">Amount Details</h1>
+            </div>
+            <hr>
+            <div id="fisrt">
+                <h4>Price (1 item)</h4>
+                <h3 id="prcpritem"></h3>
+            </div>
+
+
+
+            <div id="fisrt">
+                <h4>Delivery Charges</h4>
+                <h3>FREE</h3>
+            </div>
+            <hr>
+            <div id="fisrt">
+                <h2>Total Amount</h2>
+                <h2><span id="cart-total">0</span></h2>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div class="plcordr">
+        <button id="plcordrBtn">PLACE ORDER</button>
+    </div>
+
+
+    <!-- footer -->
+
+    <footer>
+
+        <div class="footer-row">
+            <div class="footer-col-1">
+                <div class="footer-heading">
+                    <p>ABOUT</p>
+                </div>
+                <div class="footer-list">
+                    <a href="#">Contact Us</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Flipkart Stories</a>
+                    <a href="#">Press</a>
+                    <a href="#">Flipkart Wholesale</a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <div class="footer-heading">
+                    <p>HELP</p>
+                </div>
+                <div class="footer-list">
+                    <a href="#">Payments</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Cancellation & Returns</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Report Infringement</a>
+
+                </div>
+            </div>
+            <div class="footer-col-3">
+                <div class="footer-heading">
+                    <p>POLICY</p>
+                </div>
+                <div class="footer-list">
+                    <a href="#">Return Policy</a>
+                    <a href="#">Terms Of Use</a>
+                    <a href="#">Security</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">EPR Compliance</a>
+                </div>
+            </div>
+            <div class="footer-col-4">
+                <div class="footer-heading">
+                    <p>SOCIAL</p>
+                </div>
+                <div class="footer-list">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">YouTube</a>
+
+                </div>
+            </div>
+
+            <div class="footer-col-5">
+                <div class="footer-heading">
+                    <p>Mail Us</p>
+                </div>
+                <div class="footer-list">
+                    <p>Flipkart Internet Private Limited,
+                        Buildings Alyssa, Begonia &
+                        Clove Embassy Tech Village,
+                        Outer Ring Road, Devarabeesanahalli Village,
+                        Bengaluru, 560103,
+                        Karnataka, India</p>
+
+                </div>
+            </div>
+
+            <div class="footer-col-6">
+                <div class="footer-heading">
+                    <p>Registered Office Address</p>
+                </div>
+                <div class="footer-list-address">
+                    <p>Flipkart Internet Private Limited,</p>
+                    <p>Buildings Alyssa, Begonia &</p>
+                    <p>Clove Embassy Tech Village,</p>
+                    <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+                    <p>Bengaluru, 560103,</p>
+                    <p>Karnataka, India</p>
+                    <p>CIN : U51109KA2012PTC066107</p>
+                    <p> Telephone:<span> 1800 202 9898</span></p>
+
+                </div>
+            </div>
+        </div>
+       
+    </footer>
+</body>
+<script src="./JS/addToCart.js"></script>
+
+
+</html>

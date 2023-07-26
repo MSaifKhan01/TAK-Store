@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/addToCart.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/Index.css">
+    <style>
+       
+    </style>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+
+    <header >
+        <nav class="navbar">
+          <a href="#" class="navbar-brand logo"
+            ><img src="./flipkart images/Tak_logo.png" alt="logo"
+          /></a>
+          <div class="search-container">
+            <input id="searcBox" type="text" placeholder="Search..." />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </div>
+          <ul class="navbar-nav">
+            <li>
+              <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+  
+   
+  
+            <li id="logoutName">
+              <a href="./login.html" id="nameshow"><i class="fa-solid fa-user"></i> Login</a>
+            </li>
+            <!-- <li><a href="#">Categories</a></li>
+            <li><a href="#">Deals</a></li> -->
+            <li>
+              <a href="addTocart.html"><i class="fa-solid fa-cart-shopping"><span id="Cartlength"></span></i> Cart</a>
+              <!-- <a href="#">Cart</a> -->
+            </li>
+          </ul>
+        </nav>
+  
+        <div class="sub-navbar">
+          <div class="sub-navbar-item">
+            <div class="subNav">
+              <img
+                src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/6e3e1efa83bc56c3.png?q=100"
+                alt=""
+              />
+              <a style="text-decoration: none" href="electronics.html"
+                >Electronics</a
+              >
+            </div>
+          </div>
+          <!-- <div class="sub-navbar-item">
+            <div class="subNav">
+              <img
+                src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/b3e1225e6bda1c9e.png?q=100"
+                alt=""
+              />
+              <a style="text-decoration: none" href="appliances.html"
+                >TVs & Appliances</a
+              >
+            </div>
+          </div>
+          <div class="sub-navbar-item">
+            <div class="subNav">
+              <img
+                src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/a11d5d13e54bf964.png?q=100"
+                alt=""
+              />
+              <a style="text-decoration: none" href="fashion.html">Fashion</a>
+            </div>
+          </div>
+          <div class="sub-navbar-item">
+            <div class="subNav">
+              <img
+                src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/6e3e1efa83bc56c3.png?q=100"
+                alt=""
+              />
+              <a style="text-decoration: none" href="electronics.html"
+                >Electronics</a
+              >
+            </div>
+          </div>
+          <div class="sub-navbar-item">
+            <div class="subNav">
+              <img
+                src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/b3e1225e6bda1c9e.png?q=100"
+                alt=""
+              />
+              <a style="text-decoration: none" href="appliances.html"
+                >TVs & Appliances</a
+              >
+            </div>
+          </div> -->
+        </div>
+      </header>
+    <!-- nav end -->
+
+    <!-- <div id="mainpro"><h1 id="total">Your Total cart Price is:- Rs <span id="cart-total">0</span></h1> -->
+    <div class="main">
+        <div id="cart-container">
+            <!-- Here Append All the cart Products -->
+
+        </div>
+
+        <div class="amount">
+            <div>
+                <h1 id="total">Amount Details</h1>
+            </div>
+            <hr>
+            <div id="fisrt">
+                <h4>Price (1 item)</h4>
+                <h3 id="prcpritem"></h3>
+            </div>
+
+
+
+            <div id="fisrt">
+                <h4>Delivery Charges</h4>
+                <h3>FREE</h3>
+            </div>
+            <hr>
+            <div id="fisrt">
+                <h2>Total Amount</h2>
+                <h2><span id="cart-total">0</span></h2>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div class="plcordr">
+        <button id="plcordrBtn">PLACE ORDER</button>
+    </div>
+
+
+    <!-- footer -->
+
+    <footer>
+
+        <div class="footer-row">
+            <div class="footer-col-1">
+                <div class="footer-heading">
+                    <p>ABOUT</p>
+                </div>
+                <div class="footer-list">
+                    <a href="#">Contact Us</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Flipkart Stories</a>
+                    <a href="#">Press</a>
+                    <a href="#">Flipkart Wholesale</a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <div class="footer-heading">
+                    <p>HELP</p>
+                </div>
+                <div class="footer-list">
+                    <a href="#">Payments</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Cancellation & Returns</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Report Infringement</a>
+
+                </div>
+            </div>
+            <div class="footer-col-3">
+                <div class="footer-heading">
+                    <p>POLICY</p>
+                </div>
+                <div class="footer-list">
+                    <a href="#">Return Policy</a>
+                    <a href="#">Terms Of Use</a>
+                    <a href="#">Security</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">EPR Compliance</a>
+                </div>
+            </div>
+            <div class="footer-col-4">
+                <div class="footer-heading">
+                    <p>SOCIAL</p>
+                </div>
+                <div class="footer-list">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">YouTube</a>
+
+                </div>
+            </div>
+
+            <div class="footer-col-5">
+                <div class="footer-heading">
+                    <p>Mail Us</p>
+                </div>
+                <div class="footer-list">
+                    <p>Flipkart Internet Private Limited,
+                        Buildings Alyssa, Begonia &
+                        Clove Embassy Tech Village,
+                        Outer Ring Road, Devarabeesanahalli Village,
+                        Bengaluru, 560103,
+                        Karnataka, India</p>
+
+                </div>
+            </div>
+
+            <div class="footer-col-6">
+                <div class="footer-heading">
+                    <p>Registered Office Address</p>
+                </div>
+                <div class="footer-list-address">
+                    <p>Flipkart Internet Private Limited,</p>
+                    <p>Buildings Alyssa, Begonia &</p>
+                    <p>Clove Embassy Tech Village,</p>
+                    <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+                    <p>Bengaluru, 560103,</p>
+                    <p>Karnataka, India</p>
+                    <p>CIN : U51109KA2012PTC066107</p>
+                    <p> Telephone:<span> 1800 202 9898</span></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-row2">
+            <div class="footer-row2-col">
+                <p> <i class="fas fa-shopping-bag"></i>Sell On Flipkart</p>
+            </div>
+            <div class="footer-row2-col">
+                <p><i class="fas fa-star"></i>Advertise</p>
+            </div>
+            <div class="footer-row2-col">
+                <p><i class="fas fa-gift"></i>Gift Cards</p>
+            </div>
+            <div class="footer-row2-col">
+                <p><i class="fas fa-question-circle"></i>Help Center</p>
+            </div>
+            <div class="footer-row2-col">
+                <p>© 2007-2021 Flipkart.com</p>
+            </div>
+            <div class="footer-row2-col">
+                <img src="./flipkart images/payment.png" alt="payments">
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./JS/addToCart.js"></script>
+<script>
+    // // Write all necessery JS here 
+    // let span = document.getElementById("span")
+
+    // let Container = document.getElementById("cart-container");
+
+
+
+    // function fecth(){
+    //     fetch("http://localhost:8000/cart/", {
+    //     method: "GET",
+    //     headers: {
+    //         "Authorization": `${sessionStorage.getItem("token")}`,
+    //         "content-type": "application/json",
+    //     },
+    // })
+    //     .then((res) => {
+    //         return res.json();
+    //     })
+    //     .then((data) => {
+    //         console.log("gwyjhsdcb")
+    //         let arr=[]
+    //     //    console.log(data)
+    //         arr = [...data.Fashions , ...data.appliances , ...data.electronics]
+    //         console.log("cart",arr);
+    //         // console.log(data[0].Fashions)
+    //         // console.log(data[0].appliances)
+    //         // console.log(data[0].electronics)
+    //         span.innerText = arr.length
+    //         localStorage.setItem("length",arr.length)
+    //         DisplayProduct(arr);
+    //     });
+    // }
+
+    // fecth()
+
+    // function DisplayProduct(data) {
+    //     let total = document.getElementById("cart-total")
+    //     const totalPro = document.getElementById("top")
+    //     Container.innerHTML = "";
+    //     data.forEach((product) => {
+    //         let card = document.createElement("div");
+    //         card.classList.add("card")
+    //         let img = document.createElement("img");
+    //         let brand = document.createElement("h4");
+    //         let size = document.createElement("p");
+    //         let details = document.createElement("p");
+    //         let quantity = document.createElement("p");
+    //         quantity.classList.add("qty")
+    //         let price = document.createElement("h3");
+    //         let Remove = document.createElement("button");
+    //         let Increment = document.createElement("button");
+    //         let Decrement = document.createElement("button");
+
+    //         //  product.quantity=1;
+    //         quantity.innerText = product.Quantity
+    //         // quantity.innerText=+(quantity.innerText)
+    //         img.src = product.data.image;
+    //         let div1 = document.createElement("div");
+    //         div1.classList.add("div1")
+    //         div1.append(img)
+    //         brand.textContent = product.data.description;
+    //         size.innerText = product.data.size
+    //         size.classList.add("size")
+    //         //   category.textContent = product.category;
+    //         price.textContent = `₹ ${product.data.new_price}`;
+    //         details.textContent = product.data.stars;
+    //         Remove.textContent = "Remove";
+    //         Increment.textContent = "+";
+    //         Decrement.textContent = "-";
+    //         let div2 = document.createElement("div");
+    //         div2.classList.add("div2")
+    //         div2.append(brand, size, price, details, Remove, Increment, Decrement, quantity)
+
+    //         Remove.addEventListener("click", () => {
+
+    //             fetch(`http://localhost:8000/cart/delete/${product.data._id}`, {
+    //                 method: "DELETE",
+    //                 headers: {
+    //                     "Authorization": `${sessionStorage.getItem("token")}`,
+    //                     "content-type": "application/json",
+    //                 },
+    //             })
+    //                 .then((res) => {
+    //                     return res.json();
+    //                 })
+    //                 .then((data) => {
+    //                     alert("Deleted succesfully")
+
+    //                     console.log(data);
+    //                     fecth()
+
+    //                 });
+
+    //         })
+    //         Increment.addEventListener("click", () => {
+               
+
+    //             fetch(`http://localhost:8000/cart/inc/${product._id}`, {
+    //                 method: "PATCH",
+    //                 headers: {
+    //                     "Content-Type": "application/json",
+    //                     "Authorization": `${sessionStorage.getItem("token")}`
+    //                 }
+    //             })
+    //                 .then((res) => {
+    //                     return res.json()
+    //                 })
+    //                 .then((res) => {
+    //                     // quantity.innerText = res.Quantity
+    //                     // console.log(data)
+                      
+    //                    fecth()
+    //                 })
+    //                 .catch((err) => {
+    //                     console.log(err.message)
+                       
+    //                 })
+
+    //         })
+
+
+    //         let total = document.getElementById("cart-total")
+    //         let sum = 0
+    //         for (let i = 0; i < data.length; i++) {
+    //             sum += product.data.new_price * product.Quantity
+    //         }
+    //         total.innerText = sum
+    //         //    total2.innerText = sum
+
+    //         Decrement.addEventListener("click", () => {
+                
+    //             if (product.Quantity > 1) {
+
+    //                 fetch(`http://localhost:8000/cart/dec/${product._id}`, {
+    //                     method: "PATCH",
+    //                     headers: {
+    //                         "Content-Type": "application/json",
+    //                         "Authorization": `${sessionStorage.getItem("token")}`
+    //                     }
+    //                 })
+    //                     .then((res) => {
+    //                         return res.json()
+    //                     })
+    //                     .then((res) => {
+    //                         // quantity.innerText = res.Quantity
+    //                         // console.log(data)
+    //                         console.log(res)
+    //                         fecth()
+    //                     })
+    //                     .catch((err) => {
+    //                         console.log(err.message)
+    //                     })
+    //             }
+    //         })
+
+    //         Container.append(card);
+    //         card.append(div1, div2);
+
+    //     });
+    // }
+
+    // document.getElementById("plcordrBtn").addEventListener("click", () => {
+    //     window.location.href = "./payment.html"
+    // })
+
+
+</script>
+
+</html>
