@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <!-- cdn link of bootstrap for css -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+    crossorigin="anonymous"
+  />
+
+
+
+    <link rel="stylesheet" type="text/css" href="./CSS/electronics.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/Index.css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <header >
+        <nav class="navbar">
+          <a href="#" class="navbar-brand logo"
+            ><img src="./flipkart images/Tak_logo.png" alt="logo"
+          /></a>
+          <div class="search-container">
+            <input id="searcBox" type="text" placeholder="Search..." />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </div>
+          <ul class="navbar-nav">
+            <li>
+              <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+  
+   
+  
+            <li id="logoutName">
+              <a href="./login.html" id="nameshow"><i class="fa-solid fa-user"></i> Login</a>
+            </li>
+            <!-- <li><a href="#">Categories</a></li>
+            <li><a href="#">Deals</a></li> -->
+            <li>
+              <a href="addTocart.html"><i class="fa-solid fa-cart-shopping"><span id="Cartlength"></span></i> Cart</a>
+              <!-- <a href="#">Cart</a> -->
+            </li>
+          </ul>
+        </nav>
+  
+        
+      </header>
+    <div class="sort">
+        <h2>SortBy</h2>
+        <button id="sort1">Price -- Low to High</button>
+        <button id="sort2">Price -- High to Low</button>
+    </div>
+    <div class="main">
+        <div class="leftdiv">
+            <!-- filter part -->
+            <div style="display: flex; margin-left: 30px; gap: 20px;">
+
+
+                <div>
+                    <select name="filter" id="filter">
+                        <option value="filter">Filter</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="featured" id="featured" data-bs-toggle="tooltip" data-bs-title="Another tooltip">
+                        <option value="">SortBy Desc</option>
+                        <option value="atoz">A To Z</option>
+                        <option value="ztoa">Z To A</option>
+                       
+                    </select>
+                </div>
+               
+            </div>
+           
+        </div>
+        <div class="bestofElctronic_product_item">
+
+        </div>
+    </div>
+
+
+
+    </div>
+    </div>
+    <!-- footer -->
+
+    <div class="card text-center">
+      <div class="card-header" style="margin-top: 30px">Featured</div>
+      <div class="footer-items">
+        <div class="footerlist">
+          <ul style="list-style: none">
+            <li id="List-head">ABOUT</li>
+            <li>
+              <hr />
+            </li>
+            <li>Contact Us</li>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Flipkart Stories</li>
+            <li>Flipkart Wholesale</li>
+          </ul>
+        </div>
+
+        <div class="footerlist">
+          <ul style="list-style: none">
+            <li id="List-head">HELP</li>
+            <li>
+              <hr />
+            </li>
+            <li>Payments</li>
+            <li>Shipping</li>
+            <li>Cancellation & Returns</li>
+            <li>FAQ</li>
+            <li>Report Infringement</li>
+          </ul>
+        </div>
+
+        <div class="footerlist">
+          <ul style="list-style: none">
+            <li id="List-head">POLICY</li>
+            <li>
+              <hr />
+            </li>
+            <li>Return Policy</li>
+            <li>Terms Of Use</li>
+            <li>Privacy</li>
+            <li>Sitemap</li>
+            <li>EPR Compliance</li>
+          </ul>
+        </div>
+        <hr />
+        <div class="footerlist">
+          <ul style="list-style: none">
+            <li id="List-head">Contect Us</li>
+            <li>
+              <hr />
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; color: white"
+                ><i class="fa-brands fa-facebook"></i> Facebook</a
+              >
+            </li>
+            <br />
+            <li>
+              <a href="" style="text-decoration: none; color: white"
+                ><i class="fa-brands fa-linkedin"></i> Linkdin</a
+              >
+            </li>
+            <br />
+            <li>
+              <a href="" style="text-decoration: none; color: white"
+                ><i class="fa-brands fa-github"></i> Github</a
+              >
+            </li>
+            <br />
+          </ul>
+        </div>
+
+        <hr />
+        <div class="footerlist">
+          <ul style="list-style: none">
+            <li id="List-head">Mail Us</li>
+            <li>
+              <hr />
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; color: white"
+                ><i class="fa-solid fa-envelope"></i> Mail Us</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; color: white"
+                ><i class="fa-solid fa-phone"></i> Contact Us</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; color: white"
+                ><i class="fa-solid fa-message"></i> Message Us</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; color: white"
+                ><i class="fa-solid fa-envelope"></i> Mail Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+</body>
+<script
+  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+  integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+  crossorigin="anonymous"
+></script>
+<script src="./JS/electronics.js"></script>
+
+
+
+</html>

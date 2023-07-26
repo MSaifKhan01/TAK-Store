@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/appliences.css">
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./flipkart images/TAK_store4.jpg"
+                    alt="logo">
+            </div>
+            <div class="search">
+                <div class="search-container">
+                    <input id="searcBox" type="text" class="search-box" placeholder="Search for products, brands and more">
+                    <button id="searchBtn" class="search-btn">
+                        <svg width="20" height="20" viewBox="0 0 17 18" class="" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="#2874F1" fill-rule="evenodd">
+                                <path class="_34RNph"
+                                    d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203">
+                                </path>
+                                <path class="_34RNph"
+                                    d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467">
+                                </path>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="login">
+                <div class="dropdown">
+                    <!-- onclick="myFunction()" -->
+                    <button  class="dropbtn">Login</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="login.html">Login</a>
+                        <a href="signup.html">Register</a>
+                        <a href="product.html">Admin</a>
+                    </div>
+                </div>
+                <!-- <button>
+                    <a style="text-decoration: none;" href="login.html">Login</a>
+                
+                </button> -->
+            </div>
+            <div class="become-seller">
+                Become a Seller
+            </div>
+            <div class="more">
+                More
+                <svg width="4.7" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="zZ3yfL">
+                    <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#fff"
+                        class="_2gTTdy"></path>
+                </svg>
+            </div>
+            <div class="cart">
+                <svg class="V3C5bO" width="14" height="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path class="_1bS9ic"
+                        d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86"
+                        fill="#fff"></path>
+                </svg>
+                <a href="./addTocart.html" style="text-decoration: none;color: white;"><p>Cart <span id="span"></span></p></a>
+            </div>
+        </div>
+    </header>
+    <div class="sort">
+        <h2>SortBy</h2>
+        <button id="sort1">Price -- Low to High</button>
+        <button id="sort2">Price -- High to Low</button>
+    </div>
+    <div class="main">
+        <div class="leftdiv">
+            <!-- filter part -->
+            <div style="display: flex; margin-left: 30px; gap: 20px;">
+
+
+                <div>
+                    <select name="filter" id="filter">
+                        <option value="filter">Filter</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="featured" id="featured" data-bs-toggle="tooltip" data-bs-title="Another tooltip">
+                        <option value="">SortBy Desc</option>
+                        <option value="atoz">A To Z</option>
+                        <option value="ztoa">Z To A</option>
+                       
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="bestofElctronic_product_item">
+
+        </div>
+    </div>
+
+
+
+    </div>
+    </div>
+    <!-- footer -->
+
+    <footer>
+
+        <div class="footer-row">
+            <div class="footer-col-1">
+                <div class="footer-heading">
+                    <p>ABOUT</p>
+                </div>
+                <div class="footer-list">
+                    <a href="#">Contact Us</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Flipkart Stories</a>
+                    <a href="#">Press</a>
+                    <a href="#">Flipkart Wholesale</a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <div class="footer-heading">
+                    <p>HELP</p>
+                </div>
+                <div class="footer-list">
+                    <a href="#">Payments</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Cancellation & Returns</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Report Infringement</a>
+
+                </div>
+            </div>
+            <div class="footer-col-3">
+                <div class="footer-heading">
+                    <p>POLICY</p>
+                </div>
+                <div class="footer-list">
+                    <a href="#">Return Policy</a>
+                    <a href="#">Terms Of Use</a>
+                    <a href="#">Security</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">EPR Compliance</a>
+                </div>
+            </div>
+            <div class="footer-col-4">
+                <div class="footer-heading">
+                    <p>SOCIAL</p>
+                </div>
+                <div class="footer-list">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">YouTube</a>
+
+                </div>
+            </div>
+
+            <div class="footer-col-5">
+                <div class="footer-heading">
+                    <p>Mail Us</p>
+                </div>
+                <div class="footer-list">
+                    <p>Flipkart Internet Private Limited,
+                        Buildings Alyssa, Begonia &
+                        Clove Embassy Tech Village,
+                        Outer Ring Road, Devarabeesanahalli Village,
+                        Bengaluru, 560103,
+                        Karnataka, India</p>
+
+                </div>
+            </div>
+
+            <div class="footer-col-6">
+                <div class="footer-heading">
+                    <p>Registered Office Address</p>
+                </div>
+                <div class="footer-list-address">
+                    <p>Flipkart Internet Private Limited,</p>
+                    <p>Buildings Alyssa, Begonia &</p>
+                    <p>Clove Embassy Tech Village,</p>
+                    <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+                    <p>Bengaluru, 560103,</p>
+                    <p>Karnataka, India</p>
+                    <p>CIN : U51109KA2012PTC066107</p>
+                    <p> Telephone:<span> 1800 202 9898</span></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-row2">
+            <div class="footer-row2-col">
+                <p> <i class="fas fa-shopping-bag"></i>Sell On Flipkart</p>
+            </div>
+            <div class="footer-row2-col">
+                <p><i class="fas fa-star"></i>Advertise</p>
+            </div>
+            <div class="footer-row2-col">
+                <p><i class="fas fa-gift"></i>Gift Cards</p>
+            </div>
+            <div class="footer-row2-col">
+                <p><i class="fas fa-question-circle"></i>Help Center</p>
+            </div>
+            <div class="footer-row2-col">
+                <p>© 2007-2021 Flipkart.com</p>
+            </div>
+            <div class="footer-row2-col">
+                <img src="./flipkart images/payment.png" alt="payments">
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./JS/appliences.js"></script>
+
+<script>
+//     let bestofElctronic_product_itemEl = document.querySelector(".bestofElctronic_product_item")
+//     let CartArr = JSON.parse(localStorage.getItem("length")) || [];
+    
+//     span.innerText=CartArr
+
+//     fetch("https://glamorous-pear-rugby-shirt.cyclic.app/electronic", {
+//         method: "GET",
+//         headers: {
+//             //   authorization: `${sessionStorage.getItem("token")}`,
+//             "content-type": "application/json",
+//         },
+//     })
+//         .then((res) => {
+//             return res.json();
+//         })
+//         .then((data) => {
+            
+//             display(data);
+//             searchbar(data)
+//             console.log(data);
+//             // display(sorted1)
+//         });
+      
+       
+//         let sort1=document.getElementById("sort1")
+//         sort1.addEventListener("click",()=>{
+//             sorting1()
+//         })
+//         function sorting1(){
+           
+//             fetch("https://glamorous-pear-rugby-shirt.cyclic.app/electronic/sort1", {
+//         method: "GET",
+//         headers: {
+//             //   authorization: `${sessionStorage.getItem("token")}`,
+//             "content-type": "application/json",
+//         },
+//     })
+//         .then((res) => {
+//             return res.json();
+//         })
+//         .then((data) => {
+//             console.log(data);
+//             display(data);
+//             // display(sorted1)
+//         });
+//         }
+         
+//         let sort2=document.getElementById("sort2")
+//         sort2.addEventListener("click",()=>{
+//             sorting2()
+//         })
+//         function sorting2(){
+           
+//             fetch("https://glamorous-pear-rugby-shirt.cyclic.app/electronic/sort2", {
+//         method: "GET",
+//         headers: {
+//             //   authorization: `${sessionStorage.getItem("token")}`,
+//             "content-type": "application/json",
+//         },
+//     })
+//         .then((res) => {
+//             return res.json();
+//         })
+//         .then((data) => {
+//             console.log(data);
+//             display(data);
+//             // display(sorted1)
+//         });
+//         }
+
+//         let featured=document.getElementById("featured")
+//         function sorting3(){
+           
+//            fetch("https://glamorous-pear-rugby-shirt.cyclic.app/electronic/sort3", {
+//        method: "GET",
+//        headers: {
+//            //   authorization: `${sessionStorage.getItem("token")}`,
+//            "content-type": "application/json",
+//        },
+//    })
+//        .then((res) => {
+//            return res.json();
+//        })
+//        .then((data) => {
+//            console.log(data);
+//            display(data);
+         
+//        });
+//        }
+//         function sorting4(){
+           
+//            fetch("https://glamorous-pear-rugby-shirt.cyclic.app/electronic/sort4", {
+//        method: "GET",
+//        headers: {
+//            //   authorization: `${sessionStorage.getItem("token")}`,
+//            "content-type": "application/json",
+//        },
+//    })
+//        .then((res) => {
+//            return res.json();
+//        })
+//        .then((data) => {
+//            console.log(data);
+//            display(data);
+         
+//        });
+//        }
+//   featured.addEventListener("change",()=>{
+  
+//     if(featured.value=="atoz"){
+//         sorting3()
+   
+//     }else if(featured.value=="ztoa"){
+//         sorting4()
+   
+//     }
+
+//   })
+
+//   function searchbar(data){
+//     let search = document.getElementById("searcBox");
+//     search.addEventListener("input", (e) => {
+//       e.preventDefault();
+//       const value = e.target.value;
+    
+//       let newArr = data.filter(element => {
+    
+//         return element.size.toLowerCase().includes(value) || element.description.toLowerCase().includes(value);
+    
+//       })
+//       console.log(data)
+//       display(newArr)
+    
+//     })
+   
+// }
+ 
+// // let searchBtn=document.getElementById("searchBtn")
+// // searchBtn.addEventListener("click",()=>{
+
+// //     searching()
+// // })
+// // function searching(){
+// //     let searcBox=document.getElementById("searcBox").value
+   
+// //     fetch("http://localhost:8000/product/?`${stars=searcBox}`", {
+// //         method: "GET",
+// //         headers: {
+// //             //   authorization: `${sessionStorage.getItem("token")}`,
+// //             "content-type": "application/json",
+// //         },
+// //     })
+// //         .then((res) => {
+// //             return res.json();
+// //         })
+// //         .then((data) => {
+// //             console.log(data);
+// //             display(data);
+// //             // display(sorted1)
+// //         });
+// //         console.log(searcBox)
+// // }
+      
+//     function display(data) {
+
+//         bestofElctronic_product_itemEl.innerHTML = null
+//         data.forEach(el => {
+//             let card = document.createElement("div")
+//             card.classList.add("card")
+//             let link1 = document.createElement("a")
+//             link1.classList.add("BestofElectronic_item")
+//             link1.link = el.link
+//             let div1 = document.createElement("div")
+//             div1.classList.add("bestOfElectornic_image_Product")
+//             let img = document.createElement("img")
+//             img.src = el.image
+//             let div2 = document.createElement("div")
+//             div2.classList.add("bestofElectronicmoreOption")
+
+//             let p = document.createElement("p")
+//             p.classList.add("bestofElectornicProduct_name")
+//             p.innerText = el.description
+//             let p2 = document.createElement("p")
+//             p2.classList.add("bestofElecronic_discount")
+//             p2.innerText = `₹${el.new_price}`
+//             let p3 = document.createElement("p")
+//             p3.classList.add("bestofElectronic_brand")
+//             p3.innerText = el.stars
+            
+//             p3.style.color = 'red'
+//             // let p4 = document.createElement("p")
+//             // p4.innerText=el.qty
+//             let div3 = document.createElement("div")
+//             div3.classList.add("btndiv")
+//             let btn1 = document.createElement("button")
+//             btn1.innerText = "Show Details"
+//             let btn2 = document.createElement("button")
+//             btn2.innerText = "Add to Cart"
+          
+//             div1.append(img)
+//             div3.append(btn1, btn2)
+//             div2.append(p, p2, p3, div3)
+//             link1.append(div1, div2)
+//             card.append(link1)
+
+//             bestofElctronic_product_itemEl.append(card)
+
+
+//             btn2.addEventListener("click", () => {
+//         // if (checkDuplicate(data)) {
+//         //   alert("Product Already in Cart")
+//         // } else {
+//         //   CartArr.push(el);
+//         //   localStorage.setItem("cart", JSON.stringify(CartArr));
+//         //   alert("Product Added To Cart")
+//         //   window.location.href = "./addTocart.html"
+//         // }
+
+//         let token=sessionStorage.getItem("token")
+//         if(token){
+//             fetch(`http://localhost:8000/cart/Electronics/${el._id}`,{
+//                 method:"POST",
+//                 headers:{
+//                     "Content-Type":"application/json",
+//                     "Authorization":`${sessionStorage.getItem("token")}`
+//                 },
+//                 body:JSON.stringify(el)
+//             })
+//             .then((res)=>{
+//                 return res.json()
+//             })
+//             .then((data)=>{
+             
+//                 if(data.ok){
+//                 alert(data.msg)
+//              }else{
+//                 alert(data.msg)
+//              }
+//                 // data.push({...el,qty:1})
+//                 // alert("Product added to cart") 
+//                 console.log(data)
+//             })
+//             .catch((err)=>{
+//                 console.log(err)
+//             })
+
+
+//         }else{
+//             alert("You need to login")
+//         }
+        
+//       })
+
+
+
+
+//         })
+        
+
+//     }
+
+
+
+
+
+// //     function checkDuplicate(data) {
+// //     for (let i = 0; i < CartArr.length; i++) {
+
+// //       if (CartArr[i]._id === data._id) {
+// //         return true;
+
+// //       }
+// //     }
+// //     return false;
+// //   }
+
+
+</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

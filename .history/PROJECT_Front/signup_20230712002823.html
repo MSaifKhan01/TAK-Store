@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cool Login form | By Code Info</title>
+  <link rel="stylesheet" href="LoginSignup.css">
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>Welcome</h1>
+    <!-- <p>Welcome back you've <br> been missed!</p> -->
+    <form>
+      <input type="text" placeholder="Enter username" id="name">
+      <input type="email" placeholder="Enter email" id="email">
+      <input type="number" placeholder="Enter Mobile No" id="mobi">
+      <input type="password" placeholder="Password" id="pass">
+      <input type="number" placeholder="Enter Age" id="Age">
+      <!-- <input type="file" id="image" name="avatar" accept="image/png, image/jpeg,image/jpg"> -->
+      <!-- <p class="recover">
+        <a href="#">Reset Password</a>
+      </p> -->
+      <closeform></closeform>
+    </form>
+    <button id="submit">Sign up</button>
+    <p class="or">
+      ----- or continue with -----
+    </p>
+    <div class="icons">
+      <a href="http://localhost:8000/user/auth/google">
+        <i class="fab fa-google"></i>
+      </a>
+      <!-- <i class="fab fa-github"></i>
+      <i class="fab fa-facebook"></i> -->
+    </div>
+    <div class="not-member">
+      Already Have a account? <a href="./login.html">Login Now</a>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script>
+  document.getElementById("submit").addEventListener("click", () => {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let mobi = document.getElementById("mobi").value;
+    let password = document.getElementById("pass").value;
+    let age = document.getElementById("Age").value;
+    // let image = document.getElementById("image").value;
+    if (
+      email !== "" &&
+      password !== "" &&
+      name !== "" &&
+      age != ""
+    ) {
+      let res = fetch("http://localhost:8000/user/register",
+        {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(
+            {
+              name: name,
+              email: email,
+              mobile_No: mobi,
+              password: password,
+              age: age,
+              // image:image
+
+
+            }
+          ),
+        }
+      )
+        .then((res) => {
+          return res.json();
+        })
+        .then((data) => {
+          console.log(data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+
+      alert("user register successful!!");
+      window.location.href = "./login.html";
+    } else {
+      alert("please fill the details");
+    }
+  });
+</script>
