@@ -13,8 +13,10 @@ This is the landing page which have  electronics page , TV & Appliances and Fash
 This is landing page
 ![image](https://github.com/MSaifKhan01/polite-teeth-64/assets/119418918/92171659-071e-49ba-b5aa-8a633afb9714)
 
-![landlogin](https://user-images.githubusercontent.com/119418918/229373303-4df37f10-3ccc-4aca-806a-a58b3c3102e3.jpg)
-![landing2](https://user-images.githubusercontent.com/119418918/229372974-1bcd147f-91c8-4c72-b4e5-9161b81fc45d.jpg)
+<img width="944" alt="DAshboard02" src="https://github.com/MSaifKhan01/polite-teeth-64/assets/119418918/d32c029d-caa5-44b7-8037-0a4348817461">
+
+<img width="946" alt="DAshboard03" src="https://github.com/MSaifKhan01/polite-teeth-64/assets/119418918/cbd1ee33-323b-40a3-a745-518b2335e9fd">
+
 this is the footer
 ![footer](https://user-images.githubusercontent.com/119418918/229373052-b3380cf1-9668-4628-b465-d4611e075ec1.jpg)
 signup page before filling credential
