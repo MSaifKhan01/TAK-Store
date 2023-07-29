@@ -1,5 +1,5 @@
 Frontend:- Link
-[https://stately-gumption-569f64.netlify.app](https://64c4ba3742477c42826723c1--cool-sherbet-bff1bb.netlify.app/)
+https://64c4ba3742477c42826723c1--cool-sherbet-bff1bb.netlify.app/
 
 
 Backend:-Link 
