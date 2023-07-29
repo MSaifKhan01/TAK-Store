@@ -11,7 +11,8 @@ This is a individual project which is a  e-commerce web My web name is TAK-Store
 This is the landing page which have  electronics page , TV & Appliances and Fashion product page .  product pages having search sorting and filtering functionality and having add To cart page and also having payment page .
 
 This is landing page
-![landing](https://user-images.githubusercontent.com/119418918/229370059-a51be6d8-c300-40f3-a2aa-55f35dfe0770.jpg)
+![image](https://github.com/MSaifKhan01/polite-teeth-64/assets/119418918/92171659-071e-49ba-b5aa-8a633afb9714)
+
 ![landlogin](https://user-images.githubusercontent.com/119418918/229373303-4df37f10-3ccc-4aca-806a-a58b3c3102e3.jpg)
 ![landing2](https://user-images.githubusercontent.com/119418918/229372974-1bcd147f-91c8-4c72-b4e5-9161b81fc45d.jpg)
 this is the footer
