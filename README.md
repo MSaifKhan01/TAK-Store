@@ -18,18 +18,37 @@ This is landing page
 <img width="946" alt="DAshboard03" src="https://github.com/MSaifKhan01/polite-teeth-64/assets/119418918/cbd1ee33-323b-40a3-a745-518b2335e9fd">
 
 this is the footer
-![footer](https://user-images.githubusercontent.com/119418918/229373052-b3380cf1-9668-4628-b465-d4611e075ec1.jpg)
+<img width="942" alt="Footer01" src="https://github.com/MSaifKhan01/polite-teeth-64/assets/119418918/83352f3e-a257-4d18-b9b1-b5d94051c8a1">
+
 signup page before filling credential
-![signup](https://user-images.githubusercontent.com/119418918/229373126-57335345-b22c-447b-b4b7-2dffb23eb6c8.jpg)
-signup page after filling credential and this data of a user will store in the dataBase and password will store in hashing to protect from the hackers
-![signup1](https://user-images.githubusercontent.com/119418918/229373202-96ccb357-ec5c-43af-bf59-0a247ebd66b0.jpg)
+<img width="889" alt="Register" src="https://github.com/MSaifKhan01/polite-teeth-64/assets/119418918/3f9c02ec-d968-4908-a653-b1aaff98aa3e">
+
+
 login page before filling credential
-![login](https://user-images.githubusercontent.com/119418918/229373340-a6d10ac1-d842-4f65-8c32-67d463619d29.jpg)
-login page after filling credential and this data of a user will match in the dataBase after that redirect you on some authenticated routes
-![login1](https://user-images.githubusercontent.com/119418918/229373565-d5cb7243-6791-45ef-9b90-6407967d7fc2.jpg)
+<img width="666" alt="Login" src="https://github.com/MSaifKhan01/polite-teeth-64/assets/119418918/ca692192-cbc9-4007-9fb3-62032d506501">
+
+Reset Password page before filling credential
+<img width="536" alt="ResetPass" src="https://github.com/MSaifKhan01/polite-teeth-64/assets/119418918/def6d454-aef6-497b-a7ab-f5a9f5ea03e7">
+
 Data of Fashion products coming from DataBase 
-![fashion](https://user-images.githubusercontent.com/119418918/229373635-75497218-f26a-4e25-bc56-66ff28d2cc07.jpg)
-![fashion1](https://user-images.githubusercontent.com/119418918/229373711-e79c49dd-5384-4af0-8717-863d157a33f8.jpg)
+<img width="944" alt="Fashion01" src="https://github.com/MSaifKhan01/polite-teeth-64/assets/119418918/e01fb84d-9136-4be7-85cd-53973874d747">
+
+<img width="949" alt="Fashion02" src="https://github.com/MSaifKhan01/polite-teeth-64/assets/119418918/13d10280-b183-4b0a-8c58-1eac795f0371">
+
+
+Data of Electronics products coming from DataBase 
+<img width="946" alt="Electronics" src="https://github.com/MSaifKhan01/polite-teeth-64/assets/119418918/0f0835f0-3f0e-453c-9305-b3bc1262afd5">
+
+<img width="946" alt="Electronics02" src="https://github.com/MSaifKhan01/polite-teeth-64/assets/119418918/262549a3-e5cc-488d-b906-44bf3a7139bd">
+
+Data of Appliences products coming from DataBase 
+<img width="945" alt="Appliences01" src="https://github.com/MSaifKhan01/polite-teeth-64/assets/119418918/fd6926ef-6614-43db-853d-51a9cce6fca8">
+
+<img width="940" alt="Appliences02" src="https://github.com/MSaifKhan01/polite-teeth-64/assets/119418918/7beae633-1feb-4da3-8dc9-2008fe0f2b95">
+
+
+
+
 searching functionalty
 ![fashionsearch](https://user-images.githubusercontent.com/119418918/229373738-1337bf65-2d94-4ba5-bc3a-46a07c4bfcd2.jpg)
 A To Z sorting
@@ -48,7 +67,8 @@ Electronics product page which is having same functionality as fashion product p
 ![electronic1](https://user-images.githubusercontent.com/119418918/229374058-ee59066b-dcf7-4379-ac08-d22758521e4e.jpg)
 All product item having add to cart button if you click then it will store in database of cart page
 Every item having increment ,decrement,and Remove button All the have functionality of increment ,decrement,and Remove
-![addtocart](https://user-images.githubusercontent.com/119418918/229374238-d5466fcd-a309-4ba6-adb4-a5a92473e6ae.jpg)
+<img width="951" alt="AddToCart01" src="https://github.com/MSaifKhan01/polite-teeth-64/assets/119418918/918e4f5e-0cb6-45db-963e-2f64bdad3dae">
+
   
    after increment price also increased
    
