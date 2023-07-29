@@ -3,7 +3,7 @@ Frontend:- Link
 
 
 Backend:-Link 
-[https://glamorous-pear-rugby-shirt.cyclic.app](https://tak-store-app.onrender.com)
+https://tak-store-app.onrender.com
 
 
 
