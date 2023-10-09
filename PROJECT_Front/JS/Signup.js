@@ -12,7 +12,7 @@ document.getElementById("submit").addEventListener("click", () => {
       name !== "" &&
       age != ""
     ) {
-      let res = fetch("http://localhost:8000/user/register",
+      let res = fetch("https://tak-store-app.onrender.com/user/register",
         {
           method: "POST",
           headers: {

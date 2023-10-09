@@ -21,7 +21,7 @@
       ----- or continue with -----
     </p>
     <div class="icons">
-      <a href="http://localhost:8000/user/auth/google">
+      <a href="https://tak-store-app.onrender.com/user/auth/google">
         <i class="fab fa-google"></i>
         </a>
       <!-- <i class="fab fa-github"></i>
@@ -42,7 +42,7 @@
      let newPass = document.getElementById("Newpass").value;
      let email = document.getElementById("email").value;
 
-     let res = fetch(`http://localhost:8000/user/${email}/reset`, {
+     let res = fetch(`https://tak-store-app.onrender.com/user/${email}/reset`, {
        method: "PATCH",
        headers: {
          "content-type": "application/json",

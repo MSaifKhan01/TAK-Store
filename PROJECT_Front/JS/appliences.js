@@ -3,7 +3,7 @@ let CartArr = JSON.parse(localStorage.getItem("length")) || [];
 
 
 
-fetch("https://glamorous-pear-rugby-shirt.cyclic.app/electronic", {
+fetch("https://tak-store-app.onrender.com/electronic", {
     method: "GET",
     headers: {
         //   authorization: `${sessionStorage.getItem("token")}`,
@@ -28,7 +28,7 @@ fetch("https://glamorous-pear-rugby-shirt.cyclic.app/electronic", {
     })
     function sorting1(){
        
-        fetch("https://glamorous-pear-rugby-shirt.cyclic.app/electronic/sort1", {
+        fetch("https://tak-store-app.onrender.com/electronic/sort1", {
     method: "GET",
     headers: {
         //   authorization: `${sessionStorage.getItem("token")}`,
@@ -51,7 +51,7 @@ fetch("https://glamorous-pear-rugby-shirt.cyclic.app/electronic", {
     })
     function sorting2(){
        
-        fetch("https://glamorous-pear-rugby-shirt.cyclic.app/electronic/sort2", {
+        fetch("https://tak-store-app.onrender.com/electronic/sort2", {
     method: "GET",
     headers: {
         //   authorization: `${sessionStorage.getItem("token")}`,
@@ -71,7 +71,7 @@ fetch("https://glamorous-pear-rugby-shirt.cyclic.app/electronic", {
     let featured=document.getElementById("featured")
     function sorting3(){
        
-       fetch("https://glamorous-pear-rugby-shirt.cyclic.app/electronic/sort3", {
+       fetch("https://tak-store-app.onrender.com/electronic/sort3", {
    method: "GET",
    headers: {
        //   authorization: `${sessionStorage.getItem("token")}`,
@@ -89,7 +89,7 @@ fetch("https://glamorous-pear-rugby-shirt.cyclic.app/electronic", {
    }
     function sorting4(){
        
-       fetch("https://glamorous-pear-rugby-shirt.cyclic.app/electronic/sort4", {
+       fetch("https://tak-store-app.onrender.com/electronic/sort4", {
    method: "GET",
    headers: {
        //   authorization: `${sessionStorage.getItem("token")}`,
@@ -185,7 +185,7 @@ function display(data) {
 
     let token=sessionStorage.getItem("token")
     if(token){
-        fetch(`http://localhost:8000/cart/Electronics/${el._id}`,{
+        fetch(`https://tak-store-app.onrender.com/cart/Electronics/${el._id}`,{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",

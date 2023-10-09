@@ -3,7 +3,7 @@ let CartArr = JSON.parse(localStorage.getItem("length")) || [];
 
 
 
-fetch("http://localhost:8000/fashion", {
+fetch("https://tak-store-app.onrender.com/fashion", {
     method: "GET",
     headers: {
         //   authorization: `${sessionStorage.getItem("token")}`,
@@ -29,7 +29,7 @@ fetch("http://localhost:8000/fashion", {
     })
     function sorting1(){
        
-        fetch("http://localhost:8000/fashion/sort1", {
+        fetch("https://tak-store-app.onrender.com/fashion/sort1", {
     method: "GET",
     headers: {
         //   authorization: `${sessionStorage.getItem("token")}`,
@@ -52,7 +52,7 @@ fetch("http://localhost:8000/fashion", {
     })
     function sorting2(){
        
-        fetch("http://localhost:8000/fashion/sort2", {
+        fetch("https://tak-store-app.onrender.com/fashion/sort2", {
     method: "GET",
     headers: {
         //   authorization: `${sessionStorage.getItem("token")}`,
@@ -72,7 +72,7 @@ fetch("http://localhost:8000/fashion", {
     let featured=document.getElementById("featured")
     function sorting3(){
        
-       fetch("http://localhost:8000/fashion/sort3", {
+       fetch("https://tak-store-app.onrender.com/fashion/sort3", {
    method: "GET",
    headers: {
        //   authorization: `${sessionStorage.getItem("token")}`,
@@ -90,7 +90,7 @@ fetch("http://localhost:8000/fashion", {
    }
     function sorting4(){
        
-       fetch("http://localhost:8000/fashion/sort4", {
+       fetch("https://tak-store-app.onrender.com/fashion/sort4", {
    method: "GET",
    headers: {
        //   authorization: `${sessionStorage.getItem("token")}`,
@@ -189,7 +189,7 @@ function display(data) {
 let token=sessionStorage.getItem("token")
 
     if(token){
-        fetch(`http://localhost:8000/cart/Fashion/${el._id}`,{
+        fetch(`https://tak-store-app.onrender.com/cart/Fashion/${el._id}`,{
 
 method:"POST",
 headers:{

@@ -2,7 +2,7 @@ document.getElementById("submit").addEventListener("click", () => {
     let email = document.getElementById("email").value;
     let password = document.getElementById("pass").value;
 
-    let res = fetch("http://localhost:8000/user/login", {
+    let res = fetch("https://tak-store-app.onrender.com/user/login", {
       method: "POST",
       headers: {
         "content-type": "application/json",

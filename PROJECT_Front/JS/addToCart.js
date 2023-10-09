@@ -6,7 +6,7 @@
 
 
     function fecth(){
-        fetch("http://localhost:8000/cart/", {
+        fetch("https://tak-store-app.onrender.com/cart/", {
         method: "GET",
         headers: {
             "Authorization": `${sessionStorage.getItem("token")}`,
@@ -26,7 +26,7 @@
           
             sessionStorage.setItem("length",arr.length)
             // location.reload();
-            // window.location.href()
+            // window.location.reload()
             DisplayProduct(arr);
         });
     }
@@ -73,7 +73,7 @@
 
             Remove.addEventListener("click", () => {
 
-                fetch(`http://localhost:8000/cart/delete/${product.data._id}`, {
+                fetch(`https://tak-store-app.onrender.com/cart/delete/${product.data._id}`, {
                     method: "DELETE",
                     headers: {
                         "Authorization": `${sessionStorage.getItem("token")}`,
@@ -95,7 +95,7 @@
             Increment.addEventListener("click", () => {
                
 
-                fetch(`http://localhost:8000/cart/inc/${product._id}`, {
+                fetch(`https://tak-store-app.onrender.com/cart/inc/${product._id}`, {
                     method: "PATCH",
                     headers: {
                         "Content-Type": "application/json",
@@ -129,7 +129,7 @@
                 
                 if (product.Quantity > 1) {
 
-                    fetch(`http://localhost:8000/cart/dec/${product._id}`, {
+                    fetch(`https://tak-store-app.onrender.com/cart/dec/${product._id}`, {
                         method: "PATCH",
                         headers: {
                             "Content-Type": "application/json",
