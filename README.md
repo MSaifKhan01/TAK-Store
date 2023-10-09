@@ -1,5 +1,5 @@
 Frontend:- Link
-https://64c4ba3742477c42826723c1--cool-sherbet-bff1bb.netlify.app/
+https://tak-store.netlify.app
 
 
 Backend:-Link 
